@@ -1,0 +1,70 @@
+package mykademy.tests;
+
+import java.lang.reflect.Method;
+import java.util.List;
+import java.util.Map;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+
+import core.DriverFactory;
+import core.ExcelDataProvider;
+import core.ITestData;
+import core.JSONDataProvider;
+
+public class TestBase {
+
+	private WebDriver driver;
+	private DriverFactory df;
+	
+	
+	@BeforeClass(alwaysRun=true)
+	public void initDriver() {
+		df = new DriverFactory();
+		driver = df.getDriver(System.getenv("browser"));
+	}
+	
+	@AfterClass(alwaysRun=true)
+	public void tearDown() {
+		if(driver!=null) {
+			driver.quit();
+		}
+	}
+	
+	public WebDriver driver() {
+		return driver;
+	}
+	
+	@DataProvider
+	public Object[][] getData(Method method){
+		String filePath= System.getProperty("user.dir")+"//src//test//data//mykademyData";
+		String env =  System.getenv("env");		
+		ITestData data = null;
+		
+		try {
+			
+			if(System.getenv("datasource").toLowerCase().equals("excel")) {
+				data = new ExcelDataProvider(filePath+"//TestData.xlsx",env.toUpperCase());
+			}else if(System.getenv("datasource").toLowerCase().equals("json")) {
+				data = new JSONDataProvider(filePath+"//"+env.toLowerCase()+"_data.json");
+			}
+			
+			List<Map<String,String>> finalData = data.getAllData(method.getName());
+			
+			Object[][] dp = new Object[finalData.size()][1];
+			
+			for(int i=0;i<finalData.size();i++) {
+				dp[i][0] = finalData.get(i);
+			}
+			
+			return dp;
+		}catch(Exception e) {
+			e.printStackTrace();			
+		}
+		return null;
+	}
+
+}

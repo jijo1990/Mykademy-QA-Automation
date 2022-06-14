@@ -1,0 +1,23 @@
+{
+  "testdata":
+  [
+    {"testname":"verifyLoginCheck",
+      "iteration" : [
+        {
+          "username":"thanveer.a+25@enfintechnologies.com",
+          "password":"123456ab"
+        }
+      ]
+    },
+    {"testname":"verifySignUpPage",
+      "iteration" : [
+        {
+          "signUpUsername":"Jijo Joseph 10",
+          "signUpEmail":"jijo.joseph+10@mykademy.com",
+          "signUpPhoneNumber": "8888899999",
+          "signUpPassword": "Password@123"
+        }
+      ]
+    }
+  ]
+}
