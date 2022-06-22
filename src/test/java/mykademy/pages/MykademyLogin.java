@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -25,7 +26,7 @@ public class MykademyLogin {
     private WebElement passwordField;
 
     @FindBy(xpath = ".//div[@class='admin-profile']")
-    private  WebElement AdminProfileBtn;
+    private WebElement AdminProfileBtn;
 
     @FindBy(xpath = ".//a[@id='mykademyLogoutButton' and contains(text(),'Logout')]")
     private WebElement LogOut;
@@ -42,7 +43,7 @@ public class MykademyLogin {
     }
 
     @Test(priority = 1) /* (groups = {"regression"}) */
-    public void Login_Error_Check() {
+    public boolean Login_Error_Check() {
 
 //		getDriver().findElement(By.xpath(".//li[@class='d-flex align-items-center h-100']//a[text()='SIGN IN']")).click();
         SignIn_btn.click();
@@ -57,6 +58,8 @@ public class MykademyLogin {
         }else {
             System.out.println("The Username and Password Error Check - FAILED");
         }
+
+        return (username_error.isDisplayed());
     }
 
     @Parameters({"username", "password"})
@@ -68,9 +71,4 @@ public class MykademyLogin {
         Thread.sleep(500);
     }
 
-//    @Test(priority = 3)
-//    public void LogOut(){
-//        AdminProfileBtn.click();
-//        LogOut.click();
-//    }
 }

@@ -18,6 +18,32 @@
           "signUpPassword": "Password@123"
         }
       ]
+    },
+    {"testname": "verifyLearnerAdd",
+      "iteration": [
+        {
+          "stdName": "Jijo Joseph 6902",
+          "stdEmail": "jijo.joseph+6902@mykademy.com",
+          "stdPhone": "08988885479",
+          "stdPassword": "Passowrd@123"
+        },
+        {
+          "stdName": "Jijo Joseph 6901",
+          "stdEmail": "jijo.joseph+6901@mykademy.com",
+          "stdPhone": "08988885477",
+          "stdPassword": "Passowrd@123"
+        }
+      ]
+    },
+    {"testname": "OtherLearnerModuleOperations",
+      "iteration": [
+        {
+          "searchUsers": "Jijo Joseph 6902, Jijo Joseph 6901"
+        }
+      ]
     }
+
+
+
   ]
 }

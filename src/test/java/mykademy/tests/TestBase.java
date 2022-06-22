@@ -4,40 +4,57 @@ import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;
 
+import core.*;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Parameters;
-
-import core.DriverFactory;
-import core.ExcelDataProvider;
-import core.ITestData;
-import core.JSONDataProvider;
+import org.testng.annotations.*;
 
 public class TestBase {
 
 	private WebDriver driver;
 	private DriverFactory df;
+	private TestReporter report;
+
+//	@BeforeSuite
+//	public void initSuite() {
+//		report =  new TestReporter();
+//	}
 	
-	
-	@BeforeClass(alwaysRun=true)
+	@BeforeSuite(alwaysRun=true)
 	public void initDriver() {
 		df = new DriverFactory();
 		driver = df.getDriver(System.getenv("browser"));
 	}
-	
-	@AfterClass(alwaysRun=true)
-	public void tearDown() {
-		if(driver!=null) {
-			driver.quit();
-		}
-	}
+
+//	@BeforeMethod
+//	public void startReport(Method method) {
+//		report.startReporting(method.getName(), driver);
+//	}
+
+//	@AfterMethod
+//	public void endReport() {
+//		report.endReporting();
+//	}
+
+//	@AfterSuite(alwaysRun=true)
+//	public void tearDown() {
+//		if(driver!=null) {
+//			driver.quit();
+//		}
+//	}
+
+//	@AfterSuite
+//	public void endSuite() {
+//		report.flushReport();
+//	}
 	
 	public WebDriver driver() {
 		return driver;
 	}
-	
+
+//	public TestReporter log() {
+//		return report;
+//	}
+
 	@DataProvider
 	public Object[][] getData(Method method){
 		String filePath= System.getProperty("user.dir")+"//src//test//data//mykademyData";
@@ -55,7 +72,7 @@ public class TestBase {
 			List<Map<String,String>> finalData = data.getAllData(method.getName());
 			
 			Object[][] dp = new Object[finalData.size()][1];
-			
+
 			for(int i=0;i<finalData.size();i++) {
 				dp[i][0] = finalData.get(i);
 			}

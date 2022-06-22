@@ -1,4 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.335 s - in TestSuite
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 41.663 s <<< FAILURE! - in TestSuite
+OtherLearnerModuleOperations(mykademy.tests.MykademyTestSuite)  Time elapsed: 25.262 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at mykademy.tests.MykademyTestSuite.OtherLearnerModuleOperations(MykademyTestSuite.java:67)
+

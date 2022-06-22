@@ -10,7 +10,7 @@ import java.time.Duration;
 
 public class DriverFactory {
 	
-	private WebDriver driver = null;
+	protected WebDriver driver = null;
 
 	public WebDriver getDriver(String browser) {
 		if(browser.equalsIgnoreCase("chrome")) {			

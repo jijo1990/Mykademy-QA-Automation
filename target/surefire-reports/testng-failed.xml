@@ -11,10 +11,9 @@
     <classes>
       <class name="mykademy.tests.MykademyTestSuite">
         <methods>
-          <include name="verifySignUpPage" invocation-numbers="0"/>
           <include name="initApp"/>
           <include name="initDriver"/>
-          <include name="tearDown"/>
+          <include name="OtherLearnerModuleOperations" invocation-numbers="0"/>
         </methods>
       </class> <!-- mykademy.tests.MykademyTestSuite -->
     </classes>
