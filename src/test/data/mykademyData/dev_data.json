@@ -41,6 +41,160 @@
           "searchUsers": "Jijo Joseph 6902, Jijo Joseph 6901"
         }
       ]
+    },
+    {"testname": "roleManagementModule",
+      "iteration": [
+        {
+          "roleName": "New Test Role14"
+        }
+      ]
+
+    },
+    {
+      "testname": "courseCreationModuleFirstSteps",
+      "iteration": [
+        {
+          "courseName" : "Automation Custom Course 10.0",
+          "sectionName" : "New"
+        }
+      ]
+    },
+    {"testname": "courseCreationModuleOperations",
+      "iteration": [
+        {
+          "fileName": "DOC.doc",
+          "lectureTitle": "New Document Doc 1",
+          "lectureDescription": "Automation Doc File"
+        },
+        {
+          "fileName": "DOCX.docx",
+          "lectureTitle": "New Document Docx 1",
+          "lectureDescription": "Automation Docx File"
+        },
+        {
+          "fileName": "pptx2.pptx",
+          "lectureTitle": "New Document Pptx 1",
+          "lectureDescription": "Automation Pptx File"
+        },
+        {
+          "fileName": "Sample pdf.pdf",
+          "lectureTitle": "New Document Pdf 1",
+          "lectureDescription": "Automation Pdf File"
+        },
+        {
+          "fileName": "Sample100.xls",
+          "lectureTitle": "New Document xls 1",
+          "lectureDescription": "Automation xls File"
+        },
+        {
+          "fileName": "XLSX.xlsx",
+          "lectureTitle": "New Document xlsx 1",
+          "lectureDescription": "Automation xlsx File"
+        },
+        {
+          "fileName": "MP3.mp3",
+          "lectureTitle": "New Document Mp3 1",
+          "lectureDescription": "Automation Mp3 File"
+        }
+      ]
+    },
+    {"testname": "LiveClassCreationOperations",
+      "iteration": [
+        {
+          "liveLectureName" : "Live Session 1.0",
+          "liveSessionTag" : "AutomationTag One",
+          "liveSessionAgenda" : "Automation Test Live Agenda",
+          "liveSessionDescription" : "Automation session description"
+        }
+      ]
+    },
+    {
+      "testname": "AssessmentCreationOperations",
+      "iteration": [
+        {
+          "assessmentName": "Automation Test 1",
+          "assessmentDescription": "Automation assessment test 1",
+          "totalMarkForAssessment": "10",
+          "submissionTestMessage": "Thank You For Attending The Assessment",
+          "passMarkPercentage": "10",
+          "passMessage": "PASS",
+          "failMessage": "FAIL",
+          "attemptLimitCount": "2"
+        }
+      ]
+    },
+    {
+      "testname": "AssignmentCreationOperations",
+      "iteration": [
+        {
+          "assignmentName": "Automation Assignment title",
+          "assignmentDescription": "Automation Assignment description",
+          "assignmentTotalMark": "30",
+          "assignmentWorldLimit": "25000",
+          "resubmissionDateCount": "2"
+        }
+      ]
+    },
+    {
+      "testname" : "HTMLCreationOperations",
+      "iteration": [
+        {
+          "htmlContentTitle" : "Automation Html lecture 1",
+          "htmlContentDescription" : "Automation HTML lecture content description."
+        }
+      ]
+    },
+    {
+      "testname": "ScormCreationOperations",
+      "iteration": [
+        {
+          "lectureNameFld": "Automation Scorm Lecture",
+          "lectureDescriptionFld": "Automation Scorm Lecture content"
+        }
+      ]
+    },
+    {
+      "testname" : "YouTubeCreationOperations",
+      "iteration": [
+        {
+          "youTubeContentTitle": "Automation YouTube Lecture",
+          "youTubeContentDescription": "Automation Youtube Video Lecture",
+          "enterYouTubeUrl": "https://www.youtube.com/watch?v=mOAXEQevCAE"
+        }
+      ]
+    },
+    {
+      "testname": "SurveyCreationOperations",
+      "iteration": [
+        {
+          "surveyContentTitle": "Automation Survey",
+          "surveyContentDescription": "Automation Survey description.",
+          "surveyQuestionAdd": "Rate the Course out of Five."
+        },
+        {
+          "surveyContentTitle": "Automation Facilitator Survey",
+          "surveyContentDescription": "Automation Facilitator Survey description.",
+          "surveyQuestionAdd": "Rate the Facilitator out of Five."
+        }
+      ]
+    },
+    {
+      "testname": "CourseSettingsOperations",
+      "iteration": [
+        {
+          "courseShortDescription": "This is an Automation course short Description",
+          "courseDescription": "This is a Course Description of the Course.",
+          "courseActualPrice": "20"
+        }
+      ]
+    },
+    {
+      "testname": "DeleteCourseOperations",
+      "iteration": [
+        {
+          "DeleteCourseOperations" : "Automation Custom Course 10.0"
+        }
+      ]
     }
 
 

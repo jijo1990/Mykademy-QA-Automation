@@ -13,7 +13,12 @@
         <methods>
           <include name="initApp"/>
           <include name="initDriver"/>
-          <include name="OtherLearnerModuleOperations" invocation-numbers="0"/>
+          <include name="AssessmentCreationOperations" invocation-numbers="0"/>
+          <include name="ActivateCourseOperations"/>
+          <include name="HTMLCreationOperations" invocation-numbers="0"/>
+          <include name="AssignmentCreationOperations" invocation-numbers="0"/>
+          <include name="CourseSettingsOperations" invocation-numbers="0"/>
+          <include name="DeleteCourseOperations" invocation-numbers="0"/>
         </methods>
       </class> <!-- mykademy.tests.MykademyTestSuite -->
     </classes>

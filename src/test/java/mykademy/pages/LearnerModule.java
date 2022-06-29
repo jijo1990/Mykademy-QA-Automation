@@ -98,6 +98,12 @@ public class LearnerModule extends DriverFactory {
     @FindBy(xpath = ".//a[@class='logo']")
     private WebElement logoIcon;
 
+    @FindBy(xpath = ".//a[@id='filter_dropdown_text']")
+    private WebElement filterDropdownForLearners;
+
+    @FindBy(xpath = ".//a[@id='filer_dropdown_list_all']")
+    private WebElement filterOptionAllLearners;
+
     public LearnerModule(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
@@ -140,6 +146,7 @@ public class LearnerModule extends DriverFactory {
         Thread.sleep(1000);
         confirmBoxOkBtn.click();
 //        Thread.sleep(2000);
+        searchBarUsers.clear();
 
 
     }
@@ -154,7 +161,8 @@ public class LearnerModule extends DriverFactory {
         uploadLearners.click();
         Thread.sleep(8000);
         searchBarUsers.clear();
-
+        filterDropdownForLearners.click();
+        filterOptionAllLearners.click();
 
         for(int i=0;i<2;i++){
             learnerCheckBoxSelection.get(i).click();

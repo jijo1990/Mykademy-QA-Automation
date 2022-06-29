@@ -1,0 +1,692 @@
+# Created at 2022-06-29T11:42:26.637
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:397)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+
+# Created at 2022-06-29T11:42:27.452
+Unexpected IOException: 8,1,mykademy.tests.MykademyTestSuite,LiveClassCreationOperations(mykademy.tests.MykademyTestSuite),null,chrome not reachable\000A  (Session info: chrome=103.0.5060.66)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OFIDLPQ'\002C ip: '192.168.1.9'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [e0cb907d063f8e74f3d41aff06e0460b\002C findElement {using=xpath\002C value=.//span[@class='lecture-type-holder' and contains(text()\002C'LIVE')]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 103.0.5060.66\002C chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7...\002C userDataDir: C:\005CUsers\005CEnfin\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:64018}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:64018/devtoo...\002C se:cdpVersion: 103.0.5060.66\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: e0cb907d063f8e74f3d41aff06e0460b,null,chrome not reachable\000A  (Session info: chrome=103.0.5060.66)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OFIDLPQ'\002C ip: '192.168.1.9'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [e0cb907d063f8e74f3d41aff06e0460b\002C findElement {using=xpath\002C value=.//span[@class='lecture-type-holder' and contains(text()\002C'LIVE')]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 103.0.5060.66\002C chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7...\002C userDataDir: C:\005CUsers\005CEnfin\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:64018}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:64018/devtoo...\002C se:cdpVersion: 103.0.5060.66\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: e0cb907d063f8e74f3d41aff06e0460b,MykademyTestSuite.LiveClassCreationOperations:87 \00BB WebDriver chrome not reacha...,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=103.0.5060.66)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OFIDLPQ'\002C ip: '192.168.1.9'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [e0cb907d063f8e74f3d41aff06e0460b\002C findElement {using=xpath\002C value=.//span[@class='lecture-type-holder' and contains(text()\002C'LIVE')]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 103.0.5060.66\002C chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7...\002C userDataDir: C:\005CUsers\005CEnfin\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:64018}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:64018/devtoo...\002C se:cdpVersion: 103.0.5060.66\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: e0cb907d063f8e74f3d41aff06e0460b\000A\0009at mykademy.tests.MykademyTestSuite.LiveClassCreationOperations(MykademyTestSuite.java:87)\000A
+
+
+# Created at 2022-06-29T11:42:27.457
+Unexpected IOException: 5,1,mykademy.tests.MykademyTestSuite,AssessmentCreationOperations(mykademy.tests.MykademyTestSuite),smoke,null,null
+
+
+# Created at 2022-06-29T11:42:31.462
+Unexpected IOException with stream: [
+
+# Created at 2022-06-29T11:42:31.465
+Unexpected IOException with stream: 1
+
+# Created at 2022-06-29T11:42:31.467
+Unexpected IOException with stream: 6
+
+# Created at 2022-06-29T11:42:31.469
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-29T11:42:31.471
+Unexpected IOException with stream: 6
+
+# Created at 2022-06-29T11:42:31.473
+Unexpected IOException with stream: 4
+
+# Created at 2022-06-29T11:42:31.475
+Unexpected IOException with stream: 9
+
+# Created at 2022-06-29T11:42:31.478
+Unexpected IOException with stream: 9
+
+# Created at 2022-06-29T11:42:31.480
+Unexpected IOException with stream: 3
+
+# Created at 2022-06-29T11:42:31.482
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-29T11:42:31.484
+Unexpected IOException with stream: 1
+
+# Created at 2022-06-29T11:42:31.485
+Unexpected IOException with stream: .
+
+# Created at 2022-06-29T11:42:31.487
+Unexpected IOException with stream: 4
+
+# Created at 2022-06-29T11:42:31.488
+Unexpected IOException with stream: 6
+
+# Created at 2022-06-29T11:42:31.489
+Unexpected IOException with stream: 0
+
+# Created at 2022-06-29T11:42:31.490
+Unexpected IOException with stream: ]
+
+# Created at 2022-06-29T11:42:31.490
+Unexpected IOException with stream: [
+
+# Created at 2022-06-29T11:42:31.491
+Unexpected IOException with stream: W
+
+# Created at 2022-06-29T11:42:31.492
+Unexpected IOException with stream: A
+
+# Created at 2022-06-29T11:42:31.494
+Unexpected IOException with stream: R
+
+# Created at 2022-06-29T11:42:31.495
+Unexpected IOException with stream: N
+
+# Created at 2022-06-29T11:42:31.495
+Unexpected IOException with stream: I
+
+# Created at 2022-06-29T11:42:31.496
+Unexpected IOException with stream: N
+
+# Created at 2022-06-29T11:42:31.498
+Unexpected IOException with stream: G
+
+# Created at 2022-06-29T11:42:31.500
+Unexpected IOException with stream: ]
+
+# Created at 2022-06-29T11:42:31.501
+Unexpected IOException with stream: :
+
+# Created at 2022-06-29T11:42:31.502
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:31.503
+Unexpected IOException with stream: T
+
+# Created at 2022-06-29T11:42:31.503
+Unexpected IOException with stream: i
+
+# Created at 2022-06-29T11:42:31.504
+Unexpected IOException with stream: m
+
+# Created at 2022-06-29T11:42:31.505
+Unexpected IOException with stream: e
+
+# Created at 2022-06-29T11:42:31.505
+Unexpected IOException with stream: d
+
+# Created at 2022-06-29T11:42:31.506
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:31.507
+Unexpected IOException with stream: o
+
+# Created at 2022-06-29T11:42:31.509
+Unexpected IOException with stream: u
+
+# Created at 2022-06-29T11:42:31.510
+Unexpected IOException with stream: t
+
+# Created at 2022-06-29T11:42:31.511
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:31.512
+Unexpected IOException with stream: c
+
+# Created at 2022-06-29T11:42:31.512
+Unexpected IOException with stream: o
+
+# Created at 2022-06-29T11:42:31.513
+Unexpected IOException with stream: n
+
+# Created at 2022-06-29T11:42:31.514
+Unexpected IOException with stream: n
+
+# Created at 2022-06-29T11:42:31.514
+Unexpected IOException with stream: e
+
+# Created at 2022-06-29T11:42:31.515
+Unexpected IOException with stream: c
+
+# Created at 2022-06-29T11:42:31.516
+Unexpected IOException with stream: t
+
+# Created at 2022-06-29T11:42:31.516
+Unexpected IOException with stream: i
+
+# Created at 2022-06-29T11:42:31.517
+Unexpected IOException with stream: n
+
+# Created at 2022-06-29T11:42:31.518
+Unexpected IOException with stream: g
+
+# Created at 2022-06-29T11:42:31.519
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:31.519
+Unexpected IOException with stream: t
+
+# Created at 2022-06-29T11:42:31.520
+Unexpected IOException with stream: o
+
+# Created at 2022-06-29T11:42:31.521
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:31.522
+Unexpected IOException with stream: C
+
+# Created at 2022-06-29T11:42:31.523
+Unexpected IOException with stream: h
+
+# Created at 2022-06-29T11:42:31.524
+Unexpected IOException with stream: r
+
+# Created at 2022-06-29T11:42:31.525
+Unexpected IOException with stream: o
+
+# Created at 2022-06-29T11:42:31.526
+Unexpected IOException with stream: m
+
+# Created at 2022-06-29T11:42:31.527
+Unexpected IOException with stream: e
+
+# Created at 2022-06-29T11:42:31.528
+Unexpected IOException with stream: ,
+
+# Created at 2022-06-29T11:42:31.529
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:31.530
+Unexpected IOException with stream: r
+
+# Created at 2022-06-29T11:42:31.531
+Unexpected IOException with stream: e
+
+# Created at 2022-06-29T11:42:31.532
+Unexpected IOException with stream: t
+
+# Created at 2022-06-29T11:42:31.533
+Unexpected IOException with stream: r
+
+# Created at 2022-06-29T11:42:31.534
+Unexpected IOException with stream: y
+
+# Created at 2022-06-29T11:42:31.535
+Unexpected IOException with stream: i
+
+# Created at 2022-06-29T11:42:31.537
+Unexpected IOException with stream: n
+
+# Created at 2022-06-29T11:42:31.539
+Unexpected IOException with stream: g
+
+# Created at 2022-06-29T11:42:31.541
+Unexpected IOException with stream: .
+
+# Created at 2022-06-29T11:42:31.542
+Unexpected IOException with stream: .
+
+# Created at 2022-06-29T11:42:31.543
+Unexpected IOException with stream: .
+
+# Created at 2022-06-29T11:42:31.544
+Unexpected IOException with stream: 
+
+# Created at 2022-06-29T11:42:31.544
+Unexpected IOException with stream: 
+
+
+# Created at 2022-06-29T11:42:39.626
+Unexpected IOException: 8,1,mykademy.tests.MykademyTestSuite,AssessmentCreationOperations(mykademy.tests.MykademyTestSuite),null,chrome not reachable\000A  (Session info: chrome=103.0.5060.66)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OFIDLPQ'\002C ip: '192.168.1.9'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [e0cb907d063f8e74f3d41aff06e0460b\002C findElement {using=xpath\002C value=.//span[@class='lecture-type-holder' and contains(text()\002C'Test')]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 103.0.5060.66\002C chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7...\002C userDataDir: C:\005CUsers\005CEnfin\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:64018}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:64018/devtoo...\002C se:cdpVersion: 103.0.5060.66\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: e0cb907d063f8e74f3d41aff06e0460b,null,chrome not reachable\000A  (Session info: chrome=103.0.5060.66)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OFIDLPQ'\002C ip: '192.168.1.9'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [e0cb907d063f8e74f3d41aff06e0460b\002C findElement {using=xpath\002C value=.//span[@class='lecture-type-holder' and contains(text()\002C'Test')]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 103.0.5060.66\002C chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7...\002C userDataDir: C:\005CUsers\005CEnfin\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:64018}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:64018/devtoo...\002C se:cdpVersion: 103.0.5060.66\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: e0cb907d063f8e74f3d41aff06e0460b,MykademyTestSuite.AssessmentCreationOperations:92 \00BB WebDriver chrome not reach...,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=103.0.5060.66)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OFIDLPQ'\002C ip: '192.168.1.9'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [e0cb907d063f8e74f3d41aff06e0460b\002C findElement {using=xpath\002C value=.//span[@class='lecture-type-holder' and contains(text()\002C'Test')]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 103.0.5060.66\002C chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7...\002C userDataDir: C:\005CUsers\005CEnfin\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:64018}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:64018/devtoo...\002C se:cdpVersion: 103.0.5060.66\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: e0cb907d063f8e74f3d41aff06e0460b\000A\0009at mykademy.tests.MykademyTestSuite.AssessmentCreationOperations(MykademyTestSuite.java:92)\000A
+
+
+# Created at 2022-06-29T11:42:39.630
+Unexpected IOException: 5,1,mykademy.tests.MykademyTestSuite,AssignmentCreationOperations(mykademy.tests.MykademyTestSuite),smoke,null,null
+
+
+# Created at 2022-06-29T11:42:43.634
+Unexpected IOException with stream: [
+
+# Created at 2022-06-29T11:42:43.635
+Unexpected IOException with stream: 1
+
+# Created at 2022-06-29T11:42:43.635
+Unexpected IOException with stream: 6
+
+# Created at 2022-06-29T11:42:43.636
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-29T11:42:43.637
+Unexpected IOException with stream: 6
+
+# Created at 2022-06-29T11:42:43.638
+Unexpected IOException with stream: 4
+
+# Created at 2022-06-29T11:42:43.638
+Unexpected IOException with stream: 9
+
+# Created at 2022-06-29T11:42:43.639
+Unexpected IOException with stream: 9
+
+# Created at 2022-06-29T11:42:43.640
+Unexpected IOException with stream: 3
+
+# Created at 2022-06-29T11:42:43.640
+Unexpected IOException with stream: 6
+
+# Created at 2022-06-29T11:42:43.641
+Unexpected IOException with stream: 3
+
+# Created at 2022-06-29T11:42:43.642
+Unexpected IOException with stream: .
+
+# Created at 2022-06-29T11:42:43.642
+Unexpected IOException with stream: 6
+
+# Created at 2022-06-29T11:42:43.643
+Unexpected IOException with stream: 3
+
+# Created at 2022-06-29T11:42:43.643
+Unexpected IOException with stream: 3
+
+# Created at 2022-06-29T11:42:43.644
+Unexpected IOException with stream: ]
+
+# Created at 2022-06-29T11:42:43.644
+Unexpected IOException with stream: [
+
+# Created at 2022-06-29T11:42:43.645
+Unexpected IOException with stream: W
+
+# Created at 2022-06-29T11:42:43.645
+Unexpected IOException with stream: A
+
+# Created at 2022-06-29T11:42:43.646
+Unexpected IOException with stream: R
+
+# Created at 2022-06-29T11:42:43.646
+Unexpected IOException with stream: N
+
+# Created at 2022-06-29T11:42:43.647
+Unexpected IOException with stream: I
+
+# Created at 2022-06-29T11:42:43.647
+Unexpected IOException with stream: N
+
+# Created at 2022-06-29T11:42:43.648
+Unexpected IOException with stream: G
+
+# Created at 2022-06-29T11:42:43.649
+Unexpected IOException with stream: ]
+
+# Created at 2022-06-29T11:42:43.649
+Unexpected IOException with stream: :
+
+# Created at 2022-06-29T11:42:43.650
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:43.650
+Unexpected IOException with stream: T
+
+# Created at 2022-06-29T11:42:43.651
+Unexpected IOException with stream: i
+
+# Created at 2022-06-29T11:42:43.652
+Unexpected IOException with stream: m
+
+# Created at 2022-06-29T11:42:43.652
+Unexpected IOException with stream: e
+
+# Created at 2022-06-29T11:42:43.653
+Unexpected IOException with stream: d
+
+# Created at 2022-06-29T11:42:43.653
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:43.654
+Unexpected IOException with stream: o
+
+# Created at 2022-06-29T11:42:43.655
+Unexpected IOException with stream: u
+
+# Created at 2022-06-29T11:42:43.655
+Unexpected IOException with stream: t
+
+# Created at 2022-06-29T11:42:43.656
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:43.656
+Unexpected IOException with stream: c
+
+# Created at 2022-06-29T11:42:43.657
+Unexpected IOException with stream: o
+
+# Created at 2022-06-29T11:42:43.658
+Unexpected IOException with stream: n
+
+# Created at 2022-06-29T11:42:43.658
+Unexpected IOException with stream: n
+
+# Created at 2022-06-29T11:42:43.659
+Unexpected IOException with stream: e
+
+# Created at 2022-06-29T11:42:43.659
+Unexpected IOException with stream: c
+
+# Created at 2022-06-29T11:42:43.660
+Unexpected IOException with stream: t
+
+# Created at 2022-06-29T11:42:43.661
+Unexpected IOException with stream: i
+
+# Created at 2022-06-29T11:42:43.661
+Unexpected IOException with stream: n
+
+# Created at 2022-06-29T11:42:43.662
+Unexpected IOException with stream: g
+
+# Created at 2022-06-29T11:42:43.663
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:43.663
+Unexpected IOException with stream: t
+
+# Created at 2022-06-29T11:42:43.664
+Unexpected IOException with stream: o
+
+# Created at 2022-06-29T11:42:43.665
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:43.665
+Unexpected IOException with stream: C
+
+# Created at 2022-06-29T11:42:43.666
+Unexpected IOException with stream: h
+
+# Created at 2022-06-29T11:42:43.668
+Unexpected IOException with stream: r
+
+# Created at 2022-06-29T11:42:43.669
+Unexpected IOException with stream: o
+
+# Created at 2022-06-29T11:42:43.669
+Unexpected IOException with stream: m
+
+# Created at 2022-06-29T11:42:43.671
+Unexpected IOException with stream: e
+
+# Created at 2022-06-29T11:42:43.672
+Unexpected IOException with stream: ,
+
+# Created at 2022-06-29T11:42:43.673
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:43.674
+Unexpected IOException with stream: r
+
+# Created at 2022-06-29T11:42:43.674
+Unexpected IOException with stream: e
+
+# Created at 2022-06-29T11:42:43.675
+Unexpected IOException with stream: t
+
+# Created at 2022-06-29T11:42:43.676
+Unexpected IOException with stream: r
+
+# Created at 2022-06-29T11:42:43.679
+Unexpected IOException with stream: y
+
+# Created at 2022-06-29T11:42:43.680
+Unexpected IOException with stream: i
+
+# Created at 2022-06-29T11:42:43.681
+Unexpected IOException with stream: n
+
+# Created at 2022-06-29T11:42:43.682
+Unexpected IOException with stream: g
+
+# Created at 2022-06-29T11:42:43.682
+Unexpected IOException with stream: .
+
+# Created at 2022-06-29T11:42:43.683
+Unexpected IOException with stream: .
+
+# Created at 2022-06-29T11:42:43.685
+Unexpected IOException with stream: .
+
+# Created at 2022-06-29T11:42:43.685
+Unexpected IOException with stream: 
+
+# Created at 2022-06-29T11:42:43.686
+Unexpected IOException with stream: 
+
+
+# Created at 2022-06-29T11:42:51.769
+Unexpected IOException: 8,1,mykademy.tests.MykademyTestSuite,AssignmentCreationOperations(mykademy.tests.MykademyTestSuite),null,chrome not reachable\000A  (Session info: chrome=103.0.5060.66)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OFIDLPQ'\002C ip: '192.168.1.9'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [e0cb907d063f8e74f3d41aff06e0460b\002C findElement {using=xpath\002C value=.//span[@class='lecture-type-holder' and contains(text()\002C'Assignment')]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 103.0.5060.66\002C chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7...\002C userDataDir: C:\005CUsers\005CEnfin\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:64018}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:64018/devtoo...\002C se:cdpVersion: 103.0.5060.66\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: e0cb907d063f8e74f3d41aff06e0460b,null,chrome not reachable\000A  (Session info: chrome=103.0.5060.66)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OFIDLPQ'\002C ip: '192.168.1.9'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [e0cb907d063f8e74f3d41aff06e0460b\002C findElement {using=xpath\002C value=.//span[@class='lecture-type-holder' and contains(text()\002C'Assignment')]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 103.0.5060.66\002C chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7...\002C userDataDir: C:\005CUsers\005CEnfin\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:64018}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:64018/devtoo...\002C se:cdpVersion: 103.0.5060.66\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: e0cb907d063f8e74f3d41aff06e0460b,MykademyTestSuite.AssignmentCreationOperations:97 \00BB WebDriver chrome not reach...,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=103.0.5060.66)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OFIDLPQ'\002C ip: '192.168.1.9'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [e0cb907d063f8e74f3d41aff06e0460b\002C findElement {using=xpath\002C value=.//span[@class='lecture-type-holder' and contains(text()\002C'Assignment')]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 103.0.5060.66\002C chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7...\002C userDataDir: C:\005CUsers\005CEnfin\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:64018}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:64018/devtoo...\002C se:cdpVersion: 103.0.5060.66\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: e0cb907d063f8e74f3d41aff06e0460b\000A\0009at mykademy.tests.MykademyTestSuite.AssignmentCreationOperations(MykademyTestSuite.java:97)\000A
+
+
+# Created at 2022-06-29T11:42:51.772
+Unexpected IOException: 5,1,mykademy.tests.MykademyTestSuite,HTMLCreationOperations(mykademy.tests.MykademyTestSuite),smoke,null,null
+
+
+# Created at 2022-06-29T11:42:55.783
+Unexpected IOException with stream: [
+
+# Created at 2022-06-29T11:42:55.784
+Unexpected IOException with stream: 1
+
+# Created at 2022-06-29T11:42:55.785
+Unexpected IOException with stream: 6
+
+# Created at 2022-06-29T11:42:55.786
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-29T11:42:55.787
+Unexpected IOException with stream: 6
+
+# Created at 2022-06-29T11:42:55.788
+Unexpected IOException with stream: 4
+
+# Created at 2022-06-29T11:42:55.788
+Unexpected IOException with stream: 9
+
+# Created at 2022-06-29T11:42:55.789
+Unexpected IOException with stream: 9
+
+# Created at 2022-06-29T11:42:55.790
+Unexpected IOException with stream: 3
+
+# Created at 2022-06-29T11:42:55.791
+Unexpected IOException with stream: 7
+
+# Created at 2022-06-29T11:42:55.791
+Unexpected IOException with stream: 5
+
+# Created at 2022-06-29T11:42:55.792
+Unexpected IOException with stream: .
+
+# Created at 2022-06-29T11:42:55.793
+Unexpected IOException with stream: 7
+
+# Created at 2022-06-29T11:42:55.794
+Unexpected IOException with stream: 8
+
+# Created at 2022-06-29T11:42:55.794
+Unexpected IOException with stream: 2
+
+# Created at 2022-06-29T11:42:55.795
+Unexpected IOException with stream: ]
+
+# Created at 2022-06-29T11:42:55.796
+Unexpected IOException with stream: [
+
+# Created at 2022-06-29T11:42:55.797
+Unexpected IOException with stream: W
+
+# Created at 2022-06-29T11:42:55.798
+Unexpected IOException with stream: A
+
+# Created at 2022-06-29T11:42:55.799
+Unexpected IOException with stream: R
+
+# Created at 2022-06-29T11:42:55.799
+Unexpected IOException with stream: N
+
+# Created at 2022-06-29T11:42:55.800
+Unexpected IOException with stream: I
+
+# Created at 2022-06-29T11:42:55.801
+Unexpected IOException with stream: N
+
+# Created at 2022-06-29T11:42:55.801
+Unexpected IOException with stream: G
+
+# Created at 2022-06-29T11:42:55.802
+Unexpected IOException with stream: ]
+
+# Created at 2022-06-29T11:42:55.803
+Unexpected IOException with stream: :
+
+# Created at 2022-06-29T11:42:55.803
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:55.804
+Unexpected IOException with stream: T
+
+# Created at 2022-06-29T11:42:55.804
+Unexpected IOException with stream: i
+
+# Created at 2022-06-29T11:42:55.805
+Unexpected IOException with stream: m
+
+# Created at 2022-06-29T11:42:55.805
+Unexpected IOException with stream: e
+
+# Created at 2022-06-29T11:42:55.826
+Unexpected IOException with stream: d
+
+# Created at 2022-06-29T11:42:55.827
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:55.827
+Unexpected IOException with stream: o
+
+# Created at 2022-06-29T11:42:55.828
+Unexpected IOException with stream: u
+
+# Created at 2022-06-29T11:42:55.828
+Unexpected IOException with stream: t
+
+# Created at 2022-06-29T11:42:55.829
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:55.830
+Unexpected IOException with stream: c
+
+# Created at 2022-06-29T11:42:55.830
+Unexpected IOException with stream: o
+
+# Created at 2022-06-29T11:42:55.831
+Unexpected IOException with stream: n
+
+# Created at 2022-06-29T11:42:55.831
+Unexpected IOException with stream: n
+
+# Created at 2022-06-29T11:42:55.832
+Unexpected IOException with stream: e
+
+# Created at 2022-06-29T11:42:55.833
+Unexpected IOException with stream: c
+
+# Created at 2022-06-29T11:42:55.833
+Unexpected IOException with stream: t
+
+# Created at 2022-06-29T11:42:55.834
+Unexpected IOException with stream: i
+
+# Created at 2022-06-29T11:42:55.835
+Unexpected IOException with stream: n
+
+# Created at 2022-06-29T11:42:55.835
+Unexpected IOException with stream: g
+
+# Created at 2022-06-29T11:42:55.836
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:55.836
+Unexpected IOException with stream: t
+
+# Created at 2022-06-29T11:42:55.837
+Unexpected IOException with stream: o
+
+# Created at 2022-06-29T11:42:55.837
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:55.838
+Unexpected IOException with stream: C
+
+# Created at 2022-06-29T11:42:55.838
+Unexpected IOException with stream: h
+
+# Created at 2022-06-29T11:42:55.839
+Unexpected IOException with stream: r
+
+# Created at 2022-06-29T11:42:55.840
+Unexpected IOException with stream: o
+
+# Created at 2022-06-29T11:42:55.840
+Unexpected IOException with stream: m
+
+# Created at 2022-06-29T11:42:55.841
+Unexpected IOException with stream: e
+
+# Created at 2022-06-29T11:42:55.841
+Unexpected IOException with stream: ,
+
+# Created at 2022-06-29T11:42:55.842
+Unexpected IOException with stream:  
+
+# Created at 2022-06-29T11:42:55.843
+Unexpected IOException with stream: r
+
+# Created at 2022-06-29T11:42:55.844
+Unexpected IOException with stream: e
+
+# Created at 2022-06-29T11:42:55.845
+Unexpected IOException with stream: t
+
+# Created at 2022-06-29T11:42:55.846
+Unexpected IOException with stream: r
+
+# Created at 2022-06-29T11:42:55.847
+Unexpected IOException with stream: y
+
+# Created at 2022-06-29T11:42:55.848
+Unexpected IOException with stream: i
+
+# Created at 2022-06-29T11:42:55.848
+Unexpected IOException with stream: n
+
+# Created at 2022-06-29T11:42:55.849
+Unexpected IOException with stream: g
+
+# Created at 2022-06-29T11:42:55.849
+Unexpected IOException with stream: .
+
+# Created at 2022-06-29T11:42:55.850
+Unexpected IOException with stream: .
+
+# Created at 2022-06-29T11:42:55.851
+Unexpected IOException with stream: .
+
+# Created at 2022-06-29T11:42:55.851
+Unexpected IOException with stream: 
+
+# Created at 2022-06-29T11:42:55.852
+Unexpected IOException with stream: 
+
+
+# Created at 2022-06-29T11:43:04.492
+Unexpected IOException: 8,1,mykademy.tests.MykademyTestSuite,HTMLCreationOperations(mykademy.tests.MykademyTestSuite),null,chrome not reachable\000A  (Session info: chrome=103.0.5060.66)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OFIDLPQ'\002C ip: '192.168.1.9'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [e0cb907d063f8e74f3d41aff06e0460b\002C findElement {using=xpath\002C value=.//span[@class='lecture-type-holder' and contains(text()\002C'HTML')]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 103.0.5060.66\002C chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7...\002C userDataDir: C:\005CUsers\005CEnfin\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:64018}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:64018/devtoo...\002C se:cdpVersion: 103.0.5060.66\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: e0cb907d063f8e74f3d41aff06e0460b,null,chrome not reachable\000A  (Session info: chrome=103.0.5060.66)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OFIDLPQ'\002C ip: '192.168.1.9'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [e0cb907d063f8e74f3d41aff06e0460b\002C findElement {using=xpath\002C value=.//span[@class='lecture-type-holder' and contains(text()\002C'HTML')]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 103.0.5060.66\002C chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7...\002C userDataDir: C:\005CUsers\005CEnfin\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:64018}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:64018/devtoo...\002C se:cdpVersion: 103.0.5060.66\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: e0cb907d063f8e74f3d41aff06e0460b,MykademyTestSuite.HTMLCreationOperations:102 \00BB WebDriver chrome not reachable\000A...,org.openqa.selenium.WebDriverException: \000Achrome not reachable\000A  (Session info: chrome=103.0.5060.66)\000ABuild info: version: '4.1.1'\002C revision: 'e8fcc2cecf'\000ASystem info: host: 'DESKTOP-OFIDLPQ'\002C ip: '192.168.1.9'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '11.0.12'\000ADriver info: org.openqa.selenium.chrome.ChromeDriver\000ACommand: [e0cb907d063f8e74f3d41aff06e0460b\002C findElement {using=xpath\002C value=.//span[@class='lecture-type-holder' and contains(text()\002C'HTML')]}]\000ACapabilities {acceptInsecureCerts: false\002C browserName: chrome\002C browserVersion: 103.0.5060.66\002C chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7...\002C userDataDir: C:\005CUsers\005CEnfin\005CAppData\005CLoca...}\002C goog:chromeOptions: {debuggerAddress: localhost:64018}\002C javascriptEnabled: true\002C networkConnectionEnabled: false\002C pageLoadStrategy: normal\002C platform: WINDOWS\002C platformName: WINDOWS\002C proxy: Proxy()\002C se:cdp: ws://localhost:64018/devtoo...\002C se:cdpVersion: 103.0.5060.66\002C setWindowRect: true\002C strictFileInteractability: false\002C timeouts: {implicit: 0\002C pageLoad: 300000\002C script: 30000}\002C unhandledPromptBehavior: dismiss and notify\002C webauthn:extension:credBlob: true\002C webauthn:extension:largeBlob: true\002C webauthn:virtualAuthenticators: true}\000ASession ID: e0cb907d063f8e74f3d41aff06e0460b\000A\0009at mykademy.tests.MykademyTestSuite.HTMLCreationOperations(MykademyTestSuite.java:102)\000A
+
+
+# Created at 2022-06-29T11:43:04.497
+Unexpected IOException: 5,1,mykademy.tests.MykademyTestSuite,ScormCreationOperations(mykademy.tests.MykademyTestSuite),smoke,null,null
+
+
