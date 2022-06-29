@@ -534,7 +534,7 @@ public class CourseCreationModule extends DriverFactory {
     @Test()
     public void importFile(String fileName, String lectureTitle, String lectureDescription) throws InterruptedException {
 
-        chooseAFileBtn.sendKeys("C:\\Users\\Enfin\\eclipse-FrameWork-workspace\\mykademy_bms\\uploadedFiles\\" + fileName + "");
+        chooseAFileBtn.sendKeys("C:\\Users\\Enfin\\IJ_Work_Space\\MykademyMavenProject\\SupportingDocumentFiles" + fileName + "");
         lectureNameFld.sendKeys(lectureTitle);
         selectSectionFromDropdown.click();
         lectureDescriptionFld.sendKeys(lectureDescription);
@@ -604,7 +604,7 @@ public class CourseCreationModule extends DriverFactory {
         // STEP1
 
         totalMarkForAssessment.sendKeys(totalMarkForAssessmentFld);
-//        assessmentImageUpload.sendKeys("C:\\Users\\Enfin\\eclipse-FrameWork-workspace\\mykademy_bms\\uploadedFiles\\JPG.jpg");
+//        assessmentImageUpload.sendKeys("C:\\Users\\Enfin\\IJ_Work_Space\\MykademyMavenProject\\SupportingDocumentFilesJPG.jpg");
 //        cropImage.click();
         saveAndNextBtn.click();
         confirmationPopUpOkBtn.click();
@@ -702,7 +702,7 @@ public class CourseCreationModule extends DriverFactory {
         htmlContentDescription.sendKeys(htmlContentDescriptionFld);
         createHtmlBtn.click();
         imageSelectionIcon.click();
-        imageUploadArea.sendKeys("C:\\Users\\Enfin\\eclipse-FrameWork-workspace\\mykademy_bms\\uploadedFiles\\JPG.jpg");
+        imageUploadArea.sendKeys("C:\\Users\\Enfin\\IJ_Work_Space\\MykademyMavenProject\\SupportingDocumentFiles\\JPG.jpg");
         saveUploadedImageInHtml.click();
         confirmationPopUpOkBtn.click();
         activateCurriculumBtn.click();
@@ -716,7 +716,7 @@ public class CourseCreationModule extends DriverFactory {
     @Test()
     public void ScormCreation(String lectureName, String lectureDescription) throws InterruptedException {
 
-        scormContentCreationBtn.sendKeys("C:\\Users\\Enfin\\eclipse-FrameWork-workspace\\mykademy_bms\\uploadedFiles\\SL360_LMS_SCORM_2004.zip");
+        scormContentCreationBtn.sendKeys("C:\\Users\\Enfin\\IJ_Work_Space\\MykademyMavenProject\\SupportingDocumentFiles\\SL360_LMS_SCORM_2004.zip");
         lectureNameFld.sendKeys(lectureName);
         selectSectionFromDropdown.click();
         lectureDescriptionFld.sendKeys(lectureDescription);
@@ -818,7 +818,7 @@ public class CourseCreationModule extends DriverFactory {
         selectCourseSettingsPage.click();
         Actions action = new Actions(driver);
         action.moveToElement(courseLogoImageUploadBtn).perform();
-        courseLogoImageUploadBtn.sendKeys("C:\\Users\\Enfin\\eclipse-FrameWork-workspace\\mykademy_bms\\uploadedFiles\\JPG.jpg");
+        courseLogoImageUploadBtn.sendKeys("C:\\Users\\Enfin\\IJ_Work_Space\\MykademyMavenProject\\SupportingDocumentFiles\\JPG.jpg");
         Thread.sleep(500);
         cropImageForCourse.click();
         selectCourseCategoryDropdown.click();
