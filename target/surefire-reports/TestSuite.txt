@@ -1,4 +1,77 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 18.335 s - in TestSuite
+Tests run: 21, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 228.708 s <<< FAILURE! - in TestSuite
+AssessmentCreationOperations(mykademy.tests.MykademyTestSuite)  Time elapsed: 9.384 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=103.0.5060.66)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-OFIDLPQ', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14e9be1a921155237f2fbd3109d3b2a4, clickElement {id=49ed23e3-75ae-424e-b33b-35f5fd6fd5d6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Enfin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (14e9be1a921155237f2fbd3109d3b2a4)] -> id: advanced_confirm_box_ok]
+Session ID: 14e9be1a921155237f2fbd3109d3b2a4
+	at mykademy.tests.MykademyTestSuite.AssessmentCreationOperations(MykademyTestSuite.java:92)
+
+AssignmentCreationOperations(mykademy.tests.MykademyTestSuite)  Time elapsed: 10.055 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":".//span[@class='lecture-type-holder' and contains(text(),'Assignment')]"}
+  (Session info: chrome=103.0.5060.66)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-OFIDLPQ', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14e9be1a921155237f2fbd3109d3b2a4, findElement {using=xpath, value=.//span[@class='lecture-type-holder' and contains(text(),'Assignment')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Enfin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 14e9be1a921155237f2fbd3109d3b2a4
+	at mykademy.tests.MykademyTestSuite.AssignmentCreationOperations(MykademyTestSuite.java:97)
+
+HTMLCreationOperations(mykademy.tests.MykademyTestSuite)  Time elapsed: 19.128 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=103.0.5060.66)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-OFIDLPQ', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14e9be1a921155237f2fbd3109d3b2a4, clickElement {id=e7a5582e-8be9-40f7-8183-9b7902356be9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Enfin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (14e9be1a921155237f2fbd3109d3b2a4)] -> xpath: .//span[@class='lecture-type-holder' and contains(text(),'HTML')]]
+Session ID: 14e9be1a921155237f2fbd3109d3b2a4
+	at mykademy.tests.MykademyTestSuite.HTMLCreationOperations(MykademyTestSuite.java:102)
+
+CourseSettingsOperations(mykademy.tests.MykademyTestSuite)  Time elapsed: 13.283 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=103.0.5060.66)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-OFIDLPQ', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14e9be1a921155237f2fbd3109d3b2a4, clickElement {id=f8592133-6d28-40cb-b17a-cf93218a4ef4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Enfin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (14e9be1a921155237f2fbd3109d3b2a4)] -> id: advanced_confirm_box_ok]
+Session ID: 14e9be1a921155237f2fbd3109d3b2a4
+	at mykademy.tests.MykademyTestSuite.CourseSettingsOperations(MykademyTestSuite.java:122)
+
+ActivateCourseOperations(mykademy.tests.MykademyTestSuite)  Time elapsed: 13.439 s  <<< FAILURE!
+org.testng.TestNGException: 
+
+Data Provider public java.lang.Object[][] mykademy.tests.TestBase.getData(java.lang.reflect.Method) returned a null value
+
+DeleteCourseOperations(mykademy.tests.MykademyTestSuite)  Time elapsed: 9.96 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":".//input[@id='course_keyword']"}
+  (Session info: chrome=103.0.5060.66)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.1.1', revision: 'e8fcc2cecf'
+System info: host: 'DESKTOP-OFIDLPQ', ip: '192.168.1.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14e9be1a921155237f2fbd3109d3b2a4, findElement {using=xpath, value=.//input[@id='course_keyword']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Enfin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 14e9be1a921155237f2fbd3109d3b2a4
+	at mykademy.tests.MykademyTestSuite.DeleteCourseOperations(MykademyTestSuite.java:131)
+

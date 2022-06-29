@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite1" class="navigator-link">
-              <span class="suite-name border-passed">Suite1</span>
+              <span class="suite-name border-failed">Suite1</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,46 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">21 methods, 6 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite1" class="hide-methods failed suite-Suite1"> (hide)</a> <!-- hide-methods failed suite-Suite1 -->
+                      <a href="#" panel-name="suite-Suite1" class="show-methods failed suite-Suite1"> (show)</a> <!-- show-methods failed suite-Suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite1">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="ActivateCourseOperations">ActivateCourseOperations</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="AssessmentCreationOperations({assessmentName=Automation Test 1, assessmentDescription=Automation assessment test 1, totalMarkForA...)">AssessmentCreationOperations({assessmentName=Automation Test 1, assessmentDescription=Automation assessment test 1, totalMarkForA...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="AssignmentCreationOperations({assignmentName=Automation Assignment title, assignmentDescription=Automation Assignment description...)">AssignmentCreationOperations({assignmentName=Automation Assignment title, assignmentDescription=Automation Assignment description...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="CourseSettingsOperations({courseShortDescription=This is an Automation course short Description, courseDescription=This is a ...)">CourseSettingsOperations({courseShortDescription=This is an Automation course short Description, courseDescription=This is a ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="DeleteCourseOperations({DeleteCourseOperations=Automation Custom Course 10.0})">DeleteCourseOperations({DeleteCourseOperations=Automation Custom Course 10.0})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="HTMLCreationOperations({htmlContentTitle=Automation Html lecture 1, htmlContentDescription=Automation HTML lecture content ...)">HTMLCreationOperations({htmlContentTitle=Automation Html lecture 1, htmlContentDescription=Automation HTML lecture content ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite1 -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +141,71 @@
                       <a href="#" panel-name="suite-Suite1" class="show-methods passed suite-Suite1"> (show)</a> <!-- show-methods passed suite-Suite1 -->
                     </span>
                     <div class="method-list-content passed suite-Suite1">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="LiveClassCreationOperations({liveLectureName=Live Session 1.0, liveSessionTag=AutomationTag One, liveSessionAgenda=Automation Te...)">LiveClassCreationOperations({liveLectureName=Live Session 1.0, liveSessionTag=AutomationTag One, liveSessionAgenda=Automation Te...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="ScormCreationOperations({lectureNameFld=Automation Scorm Lecture, lectureDescriptionFld=Automation Scorm Lecture content})">ScormCreationOperations({lectureNameFld=Automation Scorm Lecture, lectureDescriptionFld=Automation Scorm Lecture content})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="SurveyCreationOperations({surveyContentTitle=Automation Facilitator Survey, surveyContentDescription=Automation Facilitator S...)">SurveyCreationOperations({surveyContentTitle=Automation Facilitator Survey, surveyContentDescription=Automation Facilitator S...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="SurveyCreationOperations({surveyContentTitle=Automation Survey, surveyContentDescription=Automation Survey description., surv...)">SurveyCreationOperations({surveyContentTitle=Automation Survey, surveyContentDescription=Automation Survey description., surv...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="YouTubeCreationOperations({youTubeContentTitle=Automation YouTube Lecture, youTubeContentDescription=Automation Youtube Video ...)">YouTubeCreationOperations({youTubeContentTitle=Automation YouTube Lecture, youTubeContentDescription=Automation Youtube Video ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="courseCreationModuleFirstSteps({courseName=Automation Custom Course 10.0, sectionName=New})">courseCreationModuleFirstSteps({courseName=Automation Custom Course 10.0, sectionName=New})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="courseCreationModuleOperations({fileName=MP3.mp3, lectureTitle=New Document Mp3 1, lectureDescription=Automation Mp3 File})">courseCreationModuleOperations({fileName=MP3.mp3, lectureTitle=New Document Mp3 1, lectureDescription=Automation Mp3 File})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="courseCreationModuleOperations({fileName=Sample pdf.pdf, lectureTitle=New Document Pdf 1, lectureDescription=Automation Pdf File})">courseCreationModuleOperations({fileName=Sample pdf.pdf, lectureTitle=New Document Pdf 1, lectureDescription=Automation Pdf File})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="courseCreationModuleOperations({fileName=DOCX.docx, lectureTitle=New Document Docx 1, lectureDescription=Automation Docx File})">courseCreationModuleOperations({fileName=DOCX.docx, lectureTitle=New Document Docx 1, lectureDescription=Automation Docx File})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="courseCreationModuleOperations({fileName=DOC.doc, lectureTitle=New Document Doc 1, lectureDescription=Automation Doc File})">courseCreationModuleOperations({fileName=DOC.doc, lectureTitle=New Document Doc 1, lectureDescription=Automation Doc File})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="courseCreationModuleOperations({fileName=Sample100.xls, lectureTitle=New Document xls 1, lectureDescription=Automation xls File})">courseCreationModuleOperations({fileName=Sample100.xls, lectureTitle=New Document xls 1, lectureDescription=Automation xls File})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="courseCreationModuleOperations({fileName=pptx2.pptx, lectureTitle=New Document Pptx 1, lectureDescription=Automation Pptx File})">courseCreationModuleOperations({fileName=pptx2.pptx, lectureTitle=New Document Pptx 1, lectureDescription=Automation Pptx File})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="courseCreationModuleOperations({fileName=XLSX.xlsx, lectureTitle=New Document xlsx 1, lectureDescription=Automation xlsx File})">courseCreationModuleOperations({fileName=XLSX.xlsx, lectureTitle=New Document xlsx 1, lectureDescription=Automation xlsx File})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite1" title="mykademy.tests.MykademyTestSuite" class="method navigator-link" hash-for-method="verifyLoginCheck({username=thanveer.a+25@enfintechnologies.com, password=123456ab})">verifyLoginCheck({username=thanveer.a+25@enfintechnologies.com, password=123456ab})</a> <!-- method navigator-link -->
@@ -124,12 +228,309 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite1" class="panel Suite1">
+          <div class="suite-Suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">mykademy.tests.MykademyTestSuite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ActivateCourseOperations">
+                  </a> <!-- ActivateCourseOperations -->
+                  <span class="method-name">ActivateCourseOperations</span>
+                  <div class="stack-trace">org.testng.TestNGException: 
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssessmentCreationOperations({assessmentName=Automation Test 1, assessmentDescription=Automation assessment test 1, totalMarkForA...)">
+                  </a> <!-- AssessmentCreationOperations({assessmentName=Automation Test 1, assessmentDescription=Automation assessment test 1, totalMarkForA...) -->
+                  <span class="method-name">AssessmentCreationOperations</span>
+                  <span class="parameters">({assessmentName=Automation Test 1, assessmentDescription=Automation assessment test 1, totalMarkForAssessment=10, submissionTestMessage=Thank You For Attending The Assessment, passMarkPercentage=10, passMessage=PASS, failMessage=FAIL, attemptLimitCount=2})</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=103.0.5060.66)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-OFIDLPQ&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14e9be1a921155237f2fbd3109d3b2a4, clickElement {id=49ed23e3-75ae-424e-b33b-35f5fd6fd5d6}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Enfin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (14e9be1a921155237f2fbd3109d3b2a4)] -&gt; id: advanced_confirm_box_ok]
+Session ID: 14e9be1a921155237f2fbd3109d3b2a4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at mykademy.pages.CourseCreationModule.AssessmentCreation(CourseCreationModule.java:620)
+	at mykademy.tests.MykademyTestSuite.AssessmentCreationOperations(MykademyTestSuite.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AssignmentCreationOperations({assignmentName=Automation Assignment title, assignmentDescription=Automation Assignment description...)">
+                  </a> <!-- AssignmentCreationOperations({assignmentName=Automation Assignment title, assignmentDescription=Automation Assignment description...) -->
+                  <span class="method-name">AssignmentCreationOperations</span>
+                  <span class="parameters">({assignmentName=Automation Assignment title, assignmentDescription=Automation Assignment description, assignmentTotalMark=30, assignmentWorldLimit=25000, resubmissionDateCount=2})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//span[@class=&apos;lecture-type-holder&apos; and contains(text(),&apos;Assignment&apos;)]&quot;}
+  (Session info: chrome=103.0.5060.66)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-OFIDLPQ&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14e9be1a921155237f2fbd3109d3b2a4, findElement {using=xpath, value=.//span[@class=&apos;lecture-type-holder&apos; and contains(text(),&apos;Assignment&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Enfin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 14e9be1a921155237f2fbd3109d3b2a4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at mykademy.pages.CourseCreationModule.AssignmentCreation(CourseCreationModule.java:661)
+	at mykademy.tests.MykademyTestSuite.AssignmentCreationOperations(MykademyTestSuite.java:97)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CourseSettingsOperations({courseShortDescription=This is an Automation course short Description, courseDescription=This is a ...)">
+                  </a> <!-- CourseSettingsOperations({courseShortDescription=This is an Automation course short Description, courseDescription=This is a ...) -->
+                  <span class="method-name">CourseSettingsOperations</span>
+                  <span class="parameters">({courseShortDescription=This is an Automation course short Description, courseDescription=This is a Course Description of the Course., courseActualPrice=20})</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=103.0.5060.66)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-OFIDLPQ&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14e9be1a921155237f2fbd3109d3b2a4, clickElement {id=f8592133-6d28-40cb-b17a-cf93218a4ef4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Enfin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (14e9be1a921155237f2fbd3109d3b2a4)] -&gt; id: advanced_confirm_box_ok]
+Session ID: 14e9be1a921155237f2fbd3109d3b2a4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at mykademy.pages.CourseCreationModule.CourseSettings(CourseCreationModule.java:849)
+	at mykademy.tests.MykademyTestSuite.CourseSettingsOperations(MykademyTestSuite.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteCourseOperations({DeleteCourseOperations=Automation Custom Course 10.0})">
+                  </a> <!-- DeleteCourseOperations({DeleteCourseOperations=Automation Custom Course 10.0}) -->
+                  <span class="method-name">DeleteCourseOperations</span>
+                  <span class="parameters">({DeleteCourseOperations=Automation Custom Course 10.0})</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//input[@id=&apos;course_keyword&apos;]&quot;}
+  (Session info: chrome=103.0.5060.66)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-OFIDLPQ&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14e9be1a921155237f2fbd3109d3b2a4, findElement {using=xpath, value=.//input[@id=&apos;course_keyword&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Enfin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 14e9be1a921155237f2fbd3109d3b2a4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy14.sendKeys(Unknown Source)
+	at mykademy.pages.CourseCreationModule.DeleteCourse(CourseCreationModule.java:873)
+	at mykademy.tests.MykademyTestSuite.DeleteCourseOperations(MykademyTestSuite.java:131)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="HTMLCreationOperations({htmlContentTitle=Automation Html lecture 1, htmlContentDescription=Automation HTML lecture content ...)">
+                  </a> <!-- HTMLCreationOperations({htmlContentTitle=Automation Html lecture 1, htmlContentDescription=Automation HTML lecture content ...) -->
+                  <span class="method-name">HTMLCreationOperations</span>
+                  <span class="parameters">({htmlContentTitle=Automation Html lecture 1, htmlContentDescription=Automation HTML lecture content description.})</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=103.0.5060.66)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;DESKTOP-OFIDLPQ&apos;, ip: &apos;192.168.1.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [14e9be1a921155237f2fbd3109d3b2a4, clickElement {id=e7a5582e-8be9-40f7-8183-9b7902356be9}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\Enfin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64255}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64255/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (14e9be1a921155237f2fbd3109d3b2a4)] -&gt; xpath: .//span[@class=&apos;lecture-type-holder&apos; and contains(text(),&apos;HTML&apos;)]]
+Session ID: 14e9be1a921155237f2fbd3109d3b2a4
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at mykademy.pages.CourseCreationModule.HTMLLecture(CourseCreationModule.java:699)
+	at mykademy.tests.MykademyTestSuite.HTMLCreationOperations(MykademyTestSuite.java:102)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 38 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite1-class-failed -->
           <div class="suite-Suite1-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">mykademy.tests.MykademyTestSuite</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="LiveClassCreationOperations({liveLectureName=Live Session 1.0, liveSessionTag=AutomationTag One, liveSessionAgenda=Automation Te...)">
+                  </a> <!-- LiveClassCreationOperations({liveLectureName=Live Session 1.0, liveSessionTag=AutomationTag One, liveSessionAgenda=Automation Te...) -->
+                  <span class="method-name">LiveClassCreationOperations</span>
+                  <span class="parameters">({liveLectureName=Live Session 1.0, liveSessionTag=AutomationTag One, liveSessionAgenda=Automation Test Live Agenda, liveSessionDescription=Automation session description})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ScormCreationOperations({lectureNameFld=Automation Scorm Lecture, lectureDescriptionFld=Automation Scorm Lecture content})">
+                  </a> <!-- ScormCreationOperations({lectureNameFld=Automation Scorm Lecture, lectureDescriptionFld=Automation Scorm Lecture content}) -->
+                  <span class="method-name">ScormCreationOperations</span>
+                  <span class="parameters">({lectureNameFld=Automation Scorm Lecture, lectureDescriptionFld=Automation Scorm Lecture content})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SurveyCreationOperations({surveyContentTitle=Automation Facilitator Survey, surveyContentDescription=Automation Facilitator S...)">
+                  </a> <!-- SurveyCreationOperations({surveyContentTitle=Automation Facilitator Survey, surveyContentDescription=Automation Facilitator S...) -->
+                  <span class="method-name">SurveyCreationOperations</span>
+                  <span class="parameters">({surveyContentTitle=Automation Facilitator Survey, surveyContentDescription=Automation Facilitator Survey description., surveyQuestionAdd=Rate the Facilitator out of Five.})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SurveyCreationOperations({surveyContentTitle=Automation Survey, surveyContentDescription=Automation Survey description., surv...)">
+                  </a> <!-- SurveyCreationOperations({surveyContentTitle=Automation Survey, surveyContentDescription=Automation Survey description., surv...) -->
+                  <span class="method-name">SurveyCreationOperations</span>
+                  <span class="parameters">({surveyContentTitle=Automation Survey, surveyContentDescription=Automation Survey description., surveyQuestionAdd=Rate the Course out of Five.})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="YouTubeCreationOperations({youTubeContentTitle=Automation YouTube Lecture, youTubeContentDescription=Automation Youtube Video ...)">
+                  </a> <!-- YouTubeCreationOperations({youTubeContentTitle=Automation YouTube Lecture, youTubeContentDescription=Automation Youtube Video ...) -->
+                  <span class="method-name">YouTubeCreationOperations</span>
+                  <span class="parameters">({youTubeContentTitle=Automation YouTube Lecture, youTubeContentDescription=Automation Youtube Video Lecture, enterYouTubeUrl=https://www.youtube.com/watch?v=mOAXEQevCAE})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="courseCreationModuleFirstSteps({courseName=Automation Custom Course 10.0, sectionName=New})">
+                  </a> <!-- courseCreationModuleFirstSteps({courseName=Automation Custom Course 10.0, sectionName=New}) -->
+                  <span class="method-name">courseCreationModuleFirstSteps</span>
+                  <span class="parameters">({courseName=Automation Custom Course 10.0, sectionName=New})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="courseCreationModuleOperations({fileName=MP3.mp3, lectureTitle=New Document Mp3 1, lectureDescription=Automation Mp3 File})">
+                  </a> <!-- courseCreationModuleOperations({fileName=MP3.mp3, lectureTitle=New Document Mp3 1, lectureDescription=Automation Mp3 File}) -->
+                  <span class="method-name">courseCreationModuleOperations</span>
+                  <span class="parameters">({fileName=MP3.mp3, lectureTitle=New Document Mp3 1, lectureDescription=Automation Mp3 File})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="courseCreationModuleOperations({fileName=Sample pdf.pdf, lectureTitle=New Document Pdf 1, lectureDescription=Automation Pdf File})">
+                  </a> <!-- courseCreationModuleOperations({fileName=Sample pdf.pdf, lectureTitle=New Document Pdf 1, lectureDescription=Automation Pdf File}) -->
+                  <span class="method-name">courseCreationModuleOperations</span>
+                  <span class="parameters">({fileName=Sample pdf.pdf, lectureTitle=New Document Pdf 1, lectureDescription=Automation Pdf File})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="courseCreationModuleOperations({fileName=DOCX.docx, lectureTitle=New Document Docx 1, lectureDescription=Automation Docx File})">
+                  </a> <!-- courseCreationModuleOperations({fileName=DOCX.docx, lectureTitle=New Document Docx 1, lectureDescription=Automation Docx File}) -->
+                  <span class="method-name">courseCreationModuleOperations</span>
+                  <span class="parameters">({fileName=DOCX.docx, lectureTitle=New Document Docx 1, lectureDescription=Automation Docx File})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="courseCreationModuleOperations({fileName=DOC.doc, lectureTitle=New Document Doc 1, lectureDescription=Automation Doc File})">
+                  </a> <!-- courseCreationModuleOperations({fileName=DOC.doc, lectureTitle=New Document Doc 1, lectureDescription=Automation Doc File}) -->
+                  <span class="method-name">courseCreationModuleOperations</span>
+                  <span class="parameters">({fileName=DOC.doc, lectureTitle=New Document Doc 1, lectureDescription=Automation Doc File})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="courseCreationModuleOperations({fileName=Sample100.xls, lectureTitle=New Document xls 1, lectureDescription=Automation xls File})">
+                  </a> <!-- courseCreationModuleOperations({fileName=Sample100.xls, lectureTitle=New Document xls 1, lectureDescription=Automation xls File}) -->
+                  <span class="method-name">courseCreationModuleOperations</span>
+                  <span class="parameters">({fileName=Sample100.xls, lectureTitle=New Document xls 1, lectureDescription=Automation xls File})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="courseCreationModuleOperations({fileName=pptx2.pptx, lectureTitle=New Document Pptx 1, lectureDescription=Automation Pptx File})">
+                  </a> <!-- courseCreationModuleOperations({fileName=pptx2.pptx, lectureTitle=New Document Pptx 1, lectureDescription=Automation Pptx File}) -->
+                  <span class="method-name">courseCreationModuleOperations</span>
+                  <span class="parameters">({fileName=pptx2.pptx, lectureTitle=New Document Pptx 1, lectureDescription=Automation Pptx File})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="courseCreationModuleOperations({fileName=XLSX.xlsx, lectureTitle=New Document xlsx 1, lectureDescription=Automation xlsx File})">
+                  </a> <!-- courseCreationModuleOperations({fileName=XLSX.xlsx, lectureTitle=New Document xlsx 1, lectureDescription=Automation xlsx File}) -->
+                  <span class="method-name">courseCreationModuleOperations</span>
+                  <span class="parameters">({fileName=XLSX.xlsx, lectureTitle=New Document xlsx 1, lectureDescription=Automation xlsx File})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyLoginCheck({username=thanveer.a+25@enfintechnologies.com, password=123456ab})">
@@ -198,6 +599,54 @@
               <span class="test-group-name">smoke</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">ActivateCourseOperations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">AssessmentCreationOperations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">AssignmentCreationOperations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CourseSettingsOperations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DeleteCourseOperations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">HTMLCreationOperations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">LiveClassCreationOperations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">ScormCreationOperations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SurveyCreationOperations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">YouTubeCreationOperations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">courseCreationModuleFirstSteps</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">courseCreationModuleOperations</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">verifyLoginCheck</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -222,20 +671,96 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(21);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLoginCheck')
+data.setCell(0, 1, 'ScormCreationOperations')
 data.setCell(0, 2, 'mykademy.tests.MykademyTestSuite')
-data.setCell(0, 3, 5376);
+data.setCell(0, 3, 25027);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySignUpPage')
+data.setCell(1, 1, 'HTMLCreationOperations')
 data.setCell(1, 2, 'mykademy.tests.MykademyTestSuite')
-data.setCell(1, 3, 3512);
+data.setCell(1, 3, 19127);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'courseCreationModuleOperations')
+data.setCell(2, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(2, 3, 17036);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'courseCreationModuleOperations')
+data.setCell(3, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(3, 3, 15769);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'CourseSettingsOperations')
+data.setCell(4, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(4, 3, 13274);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'courseCreationModuleFirstSteps')
+data.setCell(5, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(5, 3, 13213);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'LiveClassCreationOperations')
+data.setCell(6, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(6, 3, 11482);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'SurveyCreationOperations')
+data.setCell(7, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(7, 3, 10842);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'SurveyCreationOperations')
+data.setCell(8, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(8, 3, 10524);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'DeleteCourseOperations')
+data.setCell(9, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(9, 3, 10103);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'AssignmentCreationOperations')
+data.setCell(10, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(10, 3, 10052);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'AssessmentCreationOperations')
+data.setCell(11, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(11, 3, 9351);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'courseCreationModuleOperations')
+data.setCell(12, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(12, 3, 8987);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'courseCreationModuleOperations')
+data.setCell(13, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(13, 3, 8985);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'courseCreationModuleOperations')
+data.setCell(14, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(14, 3, 8849);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'courseCreationModuleOperations')
+data.setCell(15, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(15, 3, 7938);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'courseCreationModuleOperations')
+data.setCell(16, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(16, 3, 7660);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'YouTubeCreationOperations')
+data.setCell(17, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(17, 3, 5455);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyLoginCheck')
+data.setCell(18, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(18, 3, 4328);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'verifySignUpPage')
+data.setCell(19, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(19, 3, 4211);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'ActivateCourseOperations')
+data.setCell(20, 2, 'mykademy.tests.MykademyTestSuite')
+data.setCell(20, 3, 0);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -262,30 +787,104 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">mykademy.tests.MykademyTestSuite</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="configuration-suite before">
                 <span class="method-name">initDriver</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-test before">
                 <span class="method-name">initApp</span>
-                <span class="method-start">3987 ms</span>
-              </div> <!-- configuration-method before -->
+                <span class="method-start">4579 ms</span>
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">verifySignUpPage({signUpUsername=Jijo Joseph 10, signUpEmail=jijo.joseph+10@mykademy.com, signUpPhoneNumber=888889999...)</span>
-                <span class="method-start">5909 ms</span>
+                <span class="method-start">5139 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">initApp</span>
-                <span class="method-start">9431 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLoginCheck({username=thanveer.a+25@enfintechnologies.com, password=123456ab})</span>
-                <span class="method-start">11120 ms</span>
+                <span class="method-start">9358 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">16499 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">courseCreationModuleFirstSteps({courseName=Automation Custom Course 10.0, sectionName=New})</span>
+                <span class="method-start">13694 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">courseCreationModuleOperations({fileName=DOC.doc, lectureTitle=New Document Doc 1, lectureDescription=Automation Doc File})</span>
+                <span class="method-start">26914 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">courseCreationModuleOperations({fileName=DOCX.docx, lectureTitle=New Document Docx 1, lectureDescription=Automation Docx File})</span>
+                <span class="method-start">35901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">courseCreationModuleOperations({fileName=pptx2.pptx, lectureTitle=New Document Pptx 1, lectureDescription=Automation Pptx File})</span>
+                <span class="method-start">44887 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">courseCreationModuleOperations({fileName=Sample pdf.pdf, lectureTitle=New Document Pdf 1, lectureDescription=Automation Pdf File})</span>
+                <span class="method-start">61923 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">courseCreationModuleOperations({fileName=Sample100.xls, lectureTitle=New Document xls 1, lectureDescription=Automation xls File})</span>
+                <span class="method-start">70773 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">courseCreationModuleOperations({fileName=XLSX.xlsx, lectureTitle=New Document xlsx 1, lectureDescription=Automation xlsx File})</span>
+                <span class="method-start">78711 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">courseCreationModuleOperations({fileName=MP3.mp3, lectureTitle=New Document Mp3 1, lectureDescription=Automation Mp3 File})</span>
+                <span class="method-start">86373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">LiveClassCreationOperations({liveLectureName=Live Session 1.0, liveSessionTag=AutomationTag One, liveSessionAgenda=Automation Te...)</span>
+                <span class="method-start">102147 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AssessmentCreationOperations({assessmentName=Automation Test 1, assessmentDescription=Automation assessment test 1, totalMarkForA...)</span>
+                <span class="method-start">113634 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AssignmentCreationOperations({assignmentName=Automation Assignment title, assignmentDescription=Automation Assignment description...)</span>
+                <span class="method-start">123026 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">HTMLCreationOperations({htmlContentTitle=Automation Html lecture 1, htmlContentDescription=Automation HTML lecture content ...)</span>
+                <span class="method-start">133083 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ScormCreationOperations({lectureNameFld=Automation Scorm Lecture, lectureDescriptionFld=Automation Scorm Lecture content})</span>
+                <span class="method-start">152216 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">YouTubeCreationOperations({youTubeContentTitle=Automation YouTube Lecture, youTubeContentDescription=Automation Youtube Video ...)</span>
+                <span class="method-start">177247 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SurveyCreationOperations({surveyContentTitle=Automation Survey, surveyContentDescription=Automation Survey description., surv...)</span>
+                <span class="method-start">182705 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SurveyCreationOperations({surveyContentTitle=Automation Facilitator Survey, surveyContentDescription=Automation Facilitator S...)</span>
+                <span class="method-start">193548 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CourseSettingsOperations({courseShortDescription=This is an Automation course short Description, courseDescription=This is a ...)</span>
+                <span class="method-start">204076 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DeleteCourseOperations({DeleteCourseOperations=Automation Custom Course 10.0})</span>
+                <span class="method-start">217370 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

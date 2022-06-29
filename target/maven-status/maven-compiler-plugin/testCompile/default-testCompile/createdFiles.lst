@@ -1,5 +1,7 @@
 mykademy\tests\MykademyTestSuite.class
 mykademy\tests\TestBase.class
+mykademy\pages\RoleManagement.class
+mykademy\pages\MykademySignUp.class
+mykademy\pages\CourseCreationModule.class
 mykademy\pages\MykademyLogin.class
 mykademy\pages\LearnerModule.class
-mykademy\pages\MykademySignUp.class

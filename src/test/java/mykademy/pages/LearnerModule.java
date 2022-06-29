@@ -1,12 +1,16 @@
 package mykademy.pages;
 
-import org.openqa.selenium.By;
+import core.DriverFactory;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class LearnerModule {
+import java.util.List;
+
+public class LearnerModule extends DriverFactory {
 
     @FindBy(xpath = ".//ol[@class='sidebar-menu']//following-sibling::li//span[contains(text(),'Users')]")
     private WebElement usersModule;
@@ -43,10 +47,67 @@ public class LearnerModule {
     @FindBy(id = "advanced_confirm_box_ok")
     private WebElement confirmBoxOkBtn;
 
+    @FindBy(id = "user_keyword")
+    private WebElement searchBarUsers;
 
+    @FindBy(xpath = ".//input[@class='user-checkbox-parent']//ancestor::label[text()='select all']")
+    private WebElement selectAllCheckbox;
 
+    @FindBy(xpath = ".//div[@id='user_bulk']//span[contains(text(),'Bulk Action')]")
+    private WebElement bulkAction;
 
+    @FindBy(xpath = ".//div[@id='user_bulk']//following-sibling::a[contains(text(),'Delete')]")
+    private WebElement delete;
 
+    @FindBy(xpath = ".//button[@id='advanced_confirm_box_ok']")
+    private WebElement btnOk;
+
+    @FindBy(xpath = ".//a[@onclick='importUsers()']")
+    private WebElement importUsers;
+
+    @FindBy(id = "import_user")
+    private WebElement browseFileForUpload;
+
+    @FindBy(id = "student_institute_upload")
+    private WebElement instituteSelection;
+
+    @FindBy(xpath = "(.//select[@id='student_institute_upload']//option)[7]")
+    private WebElement instituteUpload;
+
+    @FindBy(xpath = ".//button[@class='btn btn-green' and contains(text(),'UPLOAD')]")
+    private WebElement uploadLearners;
+
+    @FindBy(xpath = "(.//div[@id='user_row_wrapper']//following-sibling::input[@class='user-checkbox'])")
+    private List<WebElement> learnerCheckBoxSelection;
+
+    @FindBy(xpath = ".//div[@id='user_bulk']//span[contains(text(),'Bulk Action')]")
+    private WebElement learnerPageBulkActionBtn;
+
+    @FindBy(xpath = ".//div[@id='user_bulk']//following-sibling::a[contains(text(),'Delete')]")
+    private WebElement learnerDeleteOption;
+
+    @FindBy(id = "user-export")
+    private WebElement btnExportLearner;
+
+    @FindBy(xpath = ".//input[@class='field-checkbox-parent']")
+    private WebElement selectAllRequiredField;
+
+    @FindBy(xpath = ".//button[@id='learnerExportMoadalBtn']")
+    private WebElement btnExportLearners;
+
+    @FindBy(xpath = ".//a[@class='logo']")
+    private WebElement logoIcon;
+
+    @FindBy(xpath = ".//a[@id='filter_dropdown_text']")
+    private WebElement filterDropdownForLearners;
+
+    @FindBy(xpath = ".//a[@id='filer_dropdown_list_all']")
+    private WebElement filterOptionAllLearners;
+
+    public LearnerModule(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver,this);
+    }
 
     @Test(priority = 1)
     public void MoveToLearnerModule() throws InterruptedException{
@@ -55,106 +116,77 @@ public class LearnerModule {
         learnerModule.click();
     }
 
-    @Parameters({})
+    @Parameters({"stdName","stdEmail","stdPhone","stdPassword"})
     @Test (priority = 2, dependsOnMethods = {"MoveToLearnerModule"})
-    public void AddLearners(String name, String email, String phone, String password) {
-        addUserbtn.click();
-        studentName.sendKeys(name);
-        studentEmail.sendKeys(email);
-        studentPhone.sendKeys(phone);
-        studentPassword.sendKeys(password);
-        studentInstitute.click();
-        instituteSelect.click();
-        okBtn.click();
-        confirmBoxOkBtn.click();
+    public void AddLearners(String stdName, String stdEmail, String stdPhone, String stdPassword) {
 
-    }
+            addUserbtn.click();
+            studentName.sendKeys(stdName);
+            studentEmail.sendKeys(stdEmail);
+            studentPhone.sendKeys(stdPhone);
+            studentPassword.sendKeys(stdPassword);
+            studentInstitute.click();
+            instituteSelect.click();
+            okBtn.click();
+            confirmBoxOkBtn.click();
 
-    @DataProvider(name = "Learner_Details")
-    public Object[][] getData(){
-        Object [][] data = new Object[2][4];
-
-        data[0][0] = "Jijo Joseph 6902";
-        data[1][0] = "Jijo Joseph 6901";
-
-        data[0][1] = "jijo.joseph+6902@mykademy.com";
-        data[1][1] = "jijo.joseph+6901@mykademy.com";
-
-        data[0][2] = "08988885479";
-        data[1][2] = "08988885477";
-
-        data[0][3] = "Passowrd@123";
-        data[1][3] = "Passowrd@123";
-
-        return data;
     }
 
     @SuppressWarnings("deprecation")
-    @Test(priority = 4, dependsOnMethods = "AddLearners")
-    public void DeleteAlreadyAddedLearners() throws InterruptedException {
+    @Parameters({"searchUsers"})
+    @Test(priority = 3, dependsOnMethods = "AddLearners")
+    public void DeleteAlreadyAddedLearners(String searchUsers) throws InterruptedException {
 
-        WebElement search_users = getDriver().findElement(By.id("user_keyword"));
-        search_users.sendKeys("Jijo Joseph 6902, Jijo Joseph 6901");
-
+        searchBarUsers.sendKeys(searchUsers);
         Thread.sleep(2000);
-        WebElement selectall = getDriver().findElement(By.xpath(".//input[@class='user-checkbox-parent']//ancestor::label[text()='select all']"));
-        selectall.click();
-        getDriver().findElement(By.xpath(".//div[@id='user_bulk']//span[contains(text(),'Bulk Action')]")).click();
-        getDriver().findElement(By.xpath(".//div[@id='user_bulk']//following-sibling::a[contains(text(),'Delete')]")).click();
-        getDriver().findElement(By.xpath(".//button[@id='advanced_confirm_box_ok']")).click();
-        Thread.sleep(300);
-//		getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-//		WebDriverWait wait = new WebDriverWait(getDriver(),1000);
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("advanced_confirm_box_ok")));
-        getDriver().findElement(By.id("advanced_confirm_box_ok")).click();
+        selectAllCheckbox.click();
+        bulkAction.click();
+        delete.click();
+        btnOk.click();
+        Thread.sleep(1000);
+        confirmBoxOkBtn.click();
+//        Thread.sleep(2000);
+        searchBarUsers.clear();
 
-        WebDriverWait wait = new WebDriverWait(getDriver(),2000);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("searchclear"))).click();
-        Thread.sleep(2000);
+
     }
 
     @Test(priority = 5, dependsOnMethods = "MoveToLearnerModule")
     public void UploadLearners() throws InterruptedException {
 
-        getDriver().findElement(By.xpath(".//a[@onclick='importUsers()']")).click();
-        WebElement browseFileForUpload = getDriver().findElement(By.id("import_user"));
-        browseFileForUpload.sendKeys("C:\\eclipse for java\\File Upload\\learnertemplate.csv");
-        getDriver().findElement(By.id("student_institute_upload")).click();
-        getDriver().findElement(By.xpath("(.//select[@id='student_institute_upload']//option)[7]")).click();
-        getDriver().findElement(By.xpath(".//button[@class='btn btn-green' and contains(text(),'UPLOAD')]")).click();
+        importUsers.click();
+        browseFileForUpload.sendKeys("C:\\Users\\Enfin\\IJ_Work_Space\\MykademyMavenProject\\Upload Files\\learnertemplate.csv");
+        instituteSelection.click();
+        instituteUpload.click();
+        uploadLearners.click();
+        Thread.sleep(8000);
+        searchBarUsers.clear();
+        filterDropdownForLearners.click();
+        filterOptionAllLearners.click();
 
-        Thread.sleep(5000);
+        for(int i=0;i<2;i++){
+            learnerCheckBoxSelection.get(i).click();
+        }
 
-//		WebDriverWait wait = new WebDriverWait(getDriver(),6000);
-//		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(.//div[@id='user_row_wrapper']//following-sibling::input[@class='user-checkbox'])[1]"))).click();
-        getDriver().findElement(By.xpath("(.//div[@id='user_row_wrapper']//following-sibling::input[@class='user-checkbox'])[1]")).click();
-        getDriver().findElement(By.xpath("(.//div[@id='user_row_wrapper']//following-sibling::input[@class='user-checkbox'])[2]")).click();
-
-        getDriver().findElement(By.xpath(".//div[@id='user_bulk']//span[contains(text(),'Bulk Action')]")).click();
-        getDriver().findElement(By.xpath(".//div[@id='user_bulk']//following-sibling::a[contains(text(),'Delete')]")).click();
-        getDriver().findElement(By.xpath(".//button[@id='advanced_confirm_box_ok']")).click();
-        Thread.sleep(300);
-        getDriver().findElement(By.id("advanced_confirm_box_ok")).click();
+        learnerPageBulkActionBtn.click();
+        learnerDeleteOption.click();
+        btnOk.click();
+        Thread.sleep(500);
+        confirmBoxOkBtn.click();
 
     }
     @Test(priority = 6, dependsOnMethods = "MoveToLearnerModule")
     public void ExportLearner() {
 
-        getDriver().findElement(By.id("user-export")).click();
-        getDriver().findElement(By.xpath(".//input[@class='field-checkbox-parent']")).click();
-        getDriver().findElement(By.xpath(".//button[@id='learnerExportMoadalBtn']")).click();
+        btnExportLearner.click();
+        selectAllRequiredField.click();
+        btnExportLearners.click();
 
     }
 
     @Test(priority = 7, dependsOnMethods = "MoveToLearnerModule")
     public void GoToHomePage() {
-        getDriver().findElement(By.xpath(".//a[@class='logo']")).click();
-    }
 
-    @AfterTest
-    public void teaDown() {
-        if(getDriver()!=null) {
-            getDriver().quit();
-        }
+        logoIcon.click();
     }
 }
