@@ -28,7 +28,6 @@ public class MykademyTestSuite extends TestBase{
 		MyCourseCreation = new CourseCreationModule(driver());
 	}
 
-
 	@Test(groups= {"smoke"},dataProvider="getData",priority = 1)
 	public void verifySignUpPage(Map<String,String>  data) {
 		MySignup.launchApp();

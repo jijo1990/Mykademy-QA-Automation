@@ -155,7 +155,7 @@ public class LearnerModule extends DriverFactory {
     public void UploadLearners() throws InterruptedException {
 
         importUsers.click();
-        browseFileForUpload.sendKeys("C:\\Users\\Enfin\\IJ_Work_Space\\MykademyMavenProject\\Upload Files\\learnertemplate.csv");
+        browseFileForUpload.sendKeys("C:\\Users\\Enfin\\IJ_Work_Space\\MykademyMavenProject\\SupportingDocumentFiles\\learnertemplate.csv");
         instituteSelection.click();
         instituteUpload.click();
         uploadLearners.click();
