@@ -64,11 +64,12 @@ public class MykademyLogin {
 
     @Parameters({"username", "password"})
     @Test (priority = 2)
-    public void Login_Check(String username, String password) throws InterruptedException {
+    public boolean Login_Check(String username, String password) throws InterruptedException {
         usernameField.sendKeys(username);
         passwordField.sendKeys(password);
         SignIn_btn.click();
         Thread.sleep(500);
+        return (AdminProfileBtn.isDisplayed());
     }
 
 }

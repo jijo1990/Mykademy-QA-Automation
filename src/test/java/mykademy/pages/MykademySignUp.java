@@ -38,12 +38,13 @@ public class MykademySignUp {
         PageFactory.initElements(driver,this);
     }
 
-    public void launchApp(){
+    public boolean launchApp(){
         driver.get("https://debug.mykademy.com/");
+        return (signUp.isDisplayed());
     }
     @Parameters({"signUpUsername","signUpEmail","signUpPhoneNumber","signUpPassword"})
     @Test(priority = 1)
-    public void signUpTest(String signUpUsername, String signUpEmail, String signUpPhoneNumber, String signUpPassword) {
+    public boolean signUpTest(String signUpUsername, String signUpEmail, String signUpPhoneNumber, String signUpPassword) {
 
         signUp.click();
         signUpUsernameFld.sendKeys(signUpUsername);
@@ -64,5 +65,6 @@ public class MykademySignUp {
             System.out.println("SignUp page Error check - FAILED");
         }
 
+        return (btnJoin.isDisplayed());
     }
 }

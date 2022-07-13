@@ -54,13 +54,13 @@ public class RoleManagement extends DriverFactory {
     @FindBy(xpath = ".//button[@type='button' and contains(text(),'Back')]")
     private WebElement backBtn;
 
-    @FindBy(xpath = ".//a[@class='text-capitalize' and contains(text(),'New Test Role14')]//ancestor::div[@class='rTableRow']//following-sibling::span[@class='dropdown-tigger']")
+    @FindBy(xpath = ".//a[@class='text-capitalize' and contains(text(),'New Test Role21')]//ancestor::div[@class='rTableRow']//following-sibling::span[@class='dropdown-tigger']")
     private WebElement roleDropdownArrow;
 
-    @FindBy(xpath = ".//a[@class='text-capitalize' and contains(text(),'New Test Role14')]//ancestor::div[@class='rTableRow']//following-sibling::ul[@class='dropdown-menu pull-right']//a[contains(text(),'Delete')]")
+    @FindBy(xpath = ".//a[@class='text-capitalize' and contains(text(),'New Test Role21')]//ancestor::div[@class='rTableRow']//following-sibling::ul[@class='dropdown-menu pull-right']//a[contains(text(),'Delete')]")
     private WebElement deleteRoleOption;
 
-    @FindBy(xpath = ".//a[@class='text-capitalize' and contains(text(),'New Test Role14')]//ancestor::div[@class='rTableRow']//following-sibling::a[contains(text(),'Restore')]")
+    @FindBy(xpath = ".//a[@class='text-capitalize' and contains(text(),'New Test Role21')]//ancestor::div[@class='rTableRow']//following-sibling::a[contains(text(),'Restore')]")
     private WebElement restoreRoleOption;
 
     @FindBy(xpath = ".//a[@class='logo']")
@@ -81,7 +81,7 @@ public class RoleManagement extends DriverFactory {
 
     @Parameters({"roleName"})
     @Test(priority = 2,dependsOnMethods = "MoveToRoleManagement")
-    public String CreateNewRole(String roleName) throws InterruptedException {
+    public boolean CreateNewRole(String roleName) throws InterruptedException {
 
         String role = roleName;
         createRolebtn.click();
@@ -97,30 +97,33 @@ public class RoleManagement extends DriverFactory {
         Thread.sleep(2000);
         confirmationOkBtn.click();
         backBtn.click();
-        return role;
+//        return role;
+        return(createRolebtn.isDisplayed());
 
     }
 
 
     @Test(priority = 4 , dependsOnMethods = "CreateNewRole")
-    public void DeleteRole() throws InterruptedException {
+    public boolean DeleteRole() throws InterruptedException {
 
         roleDropdownArrow.click();
         deleteRoleOption.click();
         confirmationOkBtn.click();
         Thread.sleep(2000);
         confirmationOkBtn.click();
+        return(roleDropdownArrow.isDisplayed());
 
     }
 
     @Test(priority = 5, dependsOnMethods = "DeleteRole")
-    public void RestoreRole() throws InterruptedException {
+    public boolean RestoreRole() throws InterruptedException {
 
         roleDropdownArrow.click();
         restoreRoleOption.click();
         confirmationOkBtn.click();
-        Thread.sleep(1000);
+        Thread.sleep(2000);
         confirmationOkBtn.click();
+        return(roleDropdownArrow.isDisplayed());
 
     }
 

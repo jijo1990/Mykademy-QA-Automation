@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-07-08T01:03:04 IST" name="Suite1" finished-at="2022-07-08T01:03:58 IST" duration-ms="53342">
+    <groups>
+      <group name="smoke">
+        <method signature="MykademyTestSuite.verifySignUpPage(java.util.Map)[pri:1, instance:mykademy.tests.MykademyTestSuite@74ea2410]" name="verifySignUpPage" class="mykademy.tests.MykademyTestSuite"/>
+        <method signature="MykademyTestSuite.verifyLoginCheck(java.util.Map)[pri:2, instance:mykademy.tests.MykademyTestSuite@74ea2410]" name="verifyLoginCheck" class="mykademy.tests.MykademyTestSuite"/>
+        <method signature="MykademyTestSuite.courseCreationModuleFirstSteps(java.util.Map)[pri:7, instance:mykademy.tests.MykademyTestSuite@74ea2410]" name="courseCreationModuleFirstSteps" class="mykademy.tests.MykademyTestSuite"/>
+        <method signature="MykademyTestSuite.HTMLCreationOperations(java.util.Map)[pri:12, instance:mykademy.tests.MykademyTestSuite@74ea2410]" name="HTMLCreationOperations" class="mykademy.tests.MykademyTestSuite"/>
+        <method signature="MykademyTestSuite.CourseSettingsOperations(java.util.Map)[pri:16, instance:mykademy.tests.MykademyTestSuite@74ea2410]" name="CourseSettingsOperations" class="mykademy.tests.MykademyTestSuite"/>
+        <method signature="MykademyTestSuite.ActivateCourseOperations(java.util.Map)[pri:17, instance:mykademy.tests.MykademyTestSuite@74ea2410]" name="ActivateCourseOperations" class="mykademy.tests.MykademyTestSuite"/>
+        <method signature="MykademyTestSuite.DeleteCourseOperations(java.util.Map)[pri:18, instance:mykademy.tests.MykademyTestSuite@74ea2410]" name="DeleteCourseOperations" class="mykademy.tests.MykademyTestSuite"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-07-08T01:03:04 IST" name="smoke" finished-at="2022-07-08T01:03:58 IST" duration-ms="53342">
+      <class name="mykademy.tests.MykademyTestSuite">
+        <test-method is-config="true" signature="initSuite()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:04 IST" name="initSuite" finished-at="2022-07-08T01:03:04 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initSuite -->
+        <test-method is-config="true" signature="initDriver()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:04 IST" name="initDriver" finished-at="2022-07-08T01:03:08 IST" duration-ms="3316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="startReport(java.lang.reflect.Method)[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:08 IST" name="startReport" finished-at="2022-07-08T01:03:08 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mykademy.tests.MykademyTestSuite.verifySignUpPage(java.util.Map) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="initApp()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:08 IST" name="initApp" finished-at="2022-07-08T01:03:08 IST" duration-ms="58" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initApp -->
+        <test-method signature="verifySignUpPage(java.util.Map)[pri:1, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:08 IST" name="verifySignUpPage" data-provider="getData" finished-at="2022-07-08T01:03:13 IST" duration-ms="5515" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{signUpUsername=Jijo Joseph 10, signUpEmail=jijo.joseph+10@mykademy.com, signUpPhoneNumber=8888899999, signUpPassword=Password@123}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpPage -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:13 IST" name="endReport" finished-at="2022-07-08T01:03:13 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method is-config="true" signature="startReport(java.lang.reflect.Method)[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:13 IST" name="startReport" finished-at="2022-07-08T01:03:13 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mykademy.tests.MykademyTestSuite.verifyLoginCheck(java.util.Map) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="initApp()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:13 IST" name="initApp" finished-at="2022-07-08T01:03:13 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initApp -->
+        <test-method signature="verifyLoginCheck(java.util.Map)[pri:2, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:13 IST" name="verifyLoginCheck" data-provider="getData" finished-at="2022-07-08T01:03:18 IST" duration-ms="4398" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{username=thanveer.a+25@enfintechnologies.com, password=123456ab}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginCheck -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:18 IST" name="endReport" finished-at="2022-07-08T01:03:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method is-config="true" signature="startReport(java.lang.reflect.Method)[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:18 IST" name="startReport" finished-at="2022-07-08T01:03:18 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mykademy.tests.MykademyTestSuite.courseCreationModuleFirstSteps(java.util.Map) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="initApp()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:18 IST" name="initApp" finished-at="2022-07-08T01:03:18 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initApp -->
+        <test-method signature="courseCreationModuleFirstSteps(java.util.Map)[pri:7, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:18 IST" name="courseCreationModuleFirstSteps" data-provider="getData" finished-at="2022-07-08T01:03:30 IST" duration-ms="11926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{courseName=Automation Custom Course 10.0, sectionName=New}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- courseCreationModuleFirstSteps -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:30 IST" name="endReport" finished-at="2022-07-08T01:03:30 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method is-config="true" signature="startReport(java.lang.reflect.Method)[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:30 IST" name="startReport" finished-at="2022-07-08T01:03:30 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mykademy.tests.MykademyTestSuite.HTMLCreationOperations(java.util.Map) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="initApp()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:30 IST" name="initApp" finished-at="2022-07-08T01:03:30 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initApp -->
+        <test-method signature="HTMLCreationOperations(java.util.Map)[pri:12, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:30 IST" name="HTMLCreationOperations" data-provider="getData" finished-at="2022-07-08T01:03:36 IST" duration-ms="6733" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{htmlContentTitle=Automation Html lecture 1, htmlContentDescription=Automation HTML lecture content description.}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HTMLCreationOperations -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:36 IST" name="endReport" finished-at="2022-07-08T01:03:36 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method is-config="true" signature="startReport(java.lang.reflect.Method)[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:36 IST" name="startReport" finished-at="2022-07-08T01:03:36 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mykademy.tests.MykademyTestSuite.CourseSettingsOperations(java.util.Map) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="initApp()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:36 IST" name="initApp" finished-at="2022-07-08T01:03:36 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initApp -->
+        <test-method signature="CourseSettingsOperations(java.util.Map)[pri:16, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:36 IST" name="CourseSettingsOperations" data-provider="getData" finished-at="2022-07-08T01:03:47 IST" duration-ms="10672" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{courseShortDescription=This is an Automation course short Description, courseDescription=This is a Course Description of the Course., courseActualPrice=20}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CourseSettingsOperations -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:47 IST" name="endReport" finished-at="2022-07-08T01:03:47 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method signature="ActivateCourseOperations(java.util.Map)[pri:17, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:47 IST" name="ActivateCourseOperations" data-provider="getData" finished-at="2022-07-08T01:03:47 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Data Provider public java.lang.Object[][] mykademy.tests.TestBase.getData(java.lang.reflect.Method) returned a null value]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] mykademy.tests.TestBase.getData(java.lang.reflect.Method) returned a null value
+at org.testng.internal.invokers.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:155)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:767)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:704)
+at org.testng.internal.invokers.ParameterHandler.handleParameters(ParameterHandler.java:70)
+at org.testng.internal.invokers.ParameterHandler.createParameters(ParameterHandler.java:49)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:904)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ActivateCourseOperations -->
+        <test-method is-config="true" signature="initApp()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:47 IST" name="initApp" finished-at="2022-07-08T01:03:47 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initApp -->
+        <test-method is-config="true" signature="startReport(java.lang.reflect.Method)[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:47 IST" name="startReport" finished-at="2022-07-08T01:03:47 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void mykademy.tests.MykademyTestSuite.DeleteCourseOperations(java.util.Map) throws java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method signature="DeleteCourseOperations(java.util.Map)[pri:18, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:47 IST" name="DeleteCourseOperations" data-provider="getData" finished-at="2022-07-08T01:03:57 IST" duration-ms="10072" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{DeleteCourseOperations=Automation Custom Course 10.0}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DeleteCourseOperations -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:57 IST" name="tearDown" finished-at="2022-07-08T01:03:58 IST" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:57 IST" name="endReport" finished-at="2022-07-08T01:03:57 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method is-config="true" signature="endSuite()[pri:0, instance:mykademy.tests.MykademyTestSuite@74ea2410]" started-at="2022-07-08T01:03:58 IST" name="endSuite" finished-at="2022-07-08T01:03:58 IST" duration-ms="611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endSuite -->
+      </class> <!-- mykademy.tests.MykademyTestSuite -->
+    </test> <!-- smoke -->
+  </suite> <!-- Suite1 -->
+</testng-results>

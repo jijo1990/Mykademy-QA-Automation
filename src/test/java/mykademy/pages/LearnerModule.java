@@ -114,11 +114,12 @@ public class LearnerModule extends DriverFactory {
 
         usersModule.click();
         learnerModule.click();
+        
     }
 
     @Parameters({"stdName","stdEmail","stdPhone","stdPassword"})
     @Test (priority = 2, dependsOnMethods = {"MoveToLearnerModule"})
-    public void AddLearners(String stdName, String stdEmail, String stdPhone, String stdPassword) {
+    public boolean AddLearners(String stdName, String stdEmail, String stdPhone, String stdPassword) {
 
             addUserbtn.click();
             studentName.sendKeys(stdName);
@@ -129,13 +130,14 @@ public class LearnerModule extends DriverFactory {
             instituteSelect.click();
             okBtn.click();
             confirmBoxOkBtn.click();
+            return(addUserbtn.isDisplayed());
 
     }
 
     @SuppressWarnings("deprecation")
     @Parameters({"searchUsers"})
     @Test(priority = 3, dependsOnMethods = "AddLearners")
-    public void DeleteAlreadyAddedLearners(String searchUsers) throws InterruptedException {
+    public boolean DeleteAlreadyAddedLearners(String searchUsers) throws InterruptedException {
 
         searchBarUsers.sendKeys(searchUsers);
         Thread.sleep(2000);
@@ -147,12 +149,12 @@ public class LearnerModule extends DriverFactory {
         confirmBoxOkBtn.click();
 //        Thread.sleep(2000);
         searchBarUsers.clear();
-
+        return(searchBarUsers.isDisplayed());
 
     }
 
     @Test(priority = 5, dependsOnMethods = "MoveToLearnerModule")
-    public void UploadLearners() throws InterruptedException {
+    public boolean UploadLearners() throws InterruptedException {
 
         importUsers.click();
         browseFileForUpload.sendKeys("C:\\Users\\Enfin\\IJ_Work_Space\\MykademyMavenProject\\SupportingDocumentFiles\\learnertemplate.csv");
@@ -173,14 +175,16 @@ public class LearnerModule extends DriverFactory {
         btnOk.click();
         Thread.sleep(500);
         confirmBoxOkBtn.click();
+        return(importUsers.isDisplayed());
 
     }
     @Test(priority = 6, dependsOnMethods = "MoveToLearnerModule")
-    public void ExportLearner() {
+    public boolean ExportLearner() {
 
         btnExportLearner.click();
         selectAllRequiredField.click();
         btnExportLearners.click();
+        return(btnExportLearner.isDisplayed());
 
     }
 

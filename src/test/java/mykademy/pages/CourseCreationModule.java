@@ -491,17 +491,20 @@ public class CourseCreationModule extends DriverFactory {
 
     @FindBy(xpath = ".//a[text()='Delete']")
     private WebElement selectDeleteOptionFromDropdown;
+    
+    @FindBy(xpath = ".//a[@id='course_save_button']")
+    private WebElement saveBtnGreen;
 
 
-    @Test()
+    @Test(priority = 1)
     public void MoveToProductsModule() {
 
         products.click();
         courses.click();
     }
     @Parameters({"courseName","sectionName"})
-    @Test()
-    public void AddCourse(String courseName, String sectionName) throws InterruptedException {
+    @Test(priority = 2)
+    public boolean AddCourse(String courseName, String sectionName) throws InterruptedException {
 
         createCourseBtn.click();
         courseNameFld.sendKeys(courseName);
@@ -521,20 +524,23 @@ public class CourseCreationModule extends DriverFactory {
         assignNewFacilitatorBtn.click();
         selectFacilitatorFromList.click();
         assignFacilitatorToCourseBtn.click();
+        Thread.sleep(1000);
 
         // Create Course
         moveToCourseContentPage.click();
         addSectionBtn.click();
         sectionNameFld.sendKeys(sectionName);
         createSectionBtn.click();
+        Thread.sleep(500);
+        return(liveClassCreationBtn.isDisplayed());
 
     }
 
     @Parameters({"fileName","lectureTitle","lectureDescription"})
-    @Test()
-    public void importFile(String fileName, String lectureTitle, String lectureDescription) throws InterruptedException {
+    @Test(priority = 3)
+    public boolean importFile(String fileName, String lectureTitle, String lectureDescription) throws InterruptedException {
 
-        chooseAFileBtn.sendKeys("C:\\Users\\Enfin\\IJ_Work_Space\\MykademyMavenProject\\SupportingDocumentFiles" + fileName + "");
+        chooseAFileBtn.sendKeys("C:\\Users\\Enfin\\IJ_Work_Space\\MykademyMavenProject\\SupportingDocumentFiles\\" + fileName + "");
         lectureNameFld.sendKeys(lectureTitle);
         selectSectionFromDropdown.click();
         lectureDescriptionFld.sendKeys(lectureDescription);
@@ -544,11 +550,12 @@ public class CourseCreationModule extends DriverFactory {
         confirmationPopUpOkBtn.click();
         backBtnToCourseContentPage.click();
         Thread.sleep(3000);
+        return(liveClassCreationBtn.isDisplayed());
 
     }
     @Parameters({"liveLectureName","liveSessionTag","liveSessionAgenda","liveSessionDescription"})
-    @Test()
-    public void LiveClassCreation(String liveLectureNameFLd, String liveSessionTagFld, String liveSessionAgendaFld, String liveSessionDescriptionFld) throws InterruptedException {
+    @Test(priority = 4)
+    public boolean LiveClassCreation(String liveLectureNameFLd, String liveSessionTagFld, String liveSessionAgendaFld, String liveSessionDescriptionFld) throws InterruptedException {
 
         liveClassCreationBtn.click();
         liveLectureName.sendKeys(liveLectureNameFLd);
@@ -588,12 +595,13 @@ public class CourseCreationModule extends DriverFactory {
         driver.navigate().back();
         Thread.sleep(500);
         driver.navigate().back();
+        return(selectAssessmentCreationBtn.isDisplayed());
 
     }
 
     @Parameters({"assessmentName","assessmentDescription","totalMarkForAssessment","submissionTestMessage","passMarkPercentage","passMessage","failMessage","attemptLimitCount"})
-    @Test()
-    public void AssessmentCreation(String assessmentNameFld, String assessmentDescriptionFld, String totalMarkForAssessmentFld, String submissionTestMessageFld, String passMarkPercentageFld, String passMessageFld, String failMessageFld, String attemptLimitCountFld) throws InterruptedException {
+    @Test(priority = 5)
+    public boolean AssessmentCreation(String assessmentNameFld, String assessmentDescriptionFld, String totalMarkForAssessmentFld, String submissionTestMessageFld, String passMarkPercentageFld, String passMessageFld, String failMessageFld, String attemptLimitCountFld) throws InterruptedException {
 
         selectAssessmentCreationBtn.click();
         assessmentName.sendKeys(assessmentNameFld);
@@ -616,7 +624,7 @@ public class CourseCreationModule extends DriverFactory {
             selectQuestionsFromPoolCheckbox.get(i).click();
         }
         importQuestionToAssessmentBtn.click();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         confirmationPopUpOkBtn.click();
         saveAndNextBtn.click();
         Thread.sleep(6000);
@@ -651,12 +659,13 @@ public class CourseCreationModule extends DriverFactory {
         attemptLimitCount.sendKeys(attemptLimitCountFld);
         saveAssessmentBtn.click();
         backBtnToCourseContentPage.click();
+        return(assignmentCreationBtn.isDisplayed());
 
     }
 
     @Parameters({"assignmentName", "assignmentDescription", "assignmentTotalMark", "assignmentWorldLimit", "resubmissionDateCount"})
-    @Test()
-    public void AssignmentCreation(String assignmentNameFld, String assignmentDescriptionFld, String assignmentTotalMarkFld, String assignmentWorldLimitFld, String resubmissionDateCountFld) throws InterruptedException {
+    @Test(priority = 6)
+    public boolean AssignmentCreation(String assignmentNameFld, String assignmentDescriptionFld, String assignmentTotalMarkFld, String assignmentWorldLimitFld, String resubmissionDateCountFld) throws InterruptedException {
 
         assignmentCreationBtn.click();
         assignmentName.sendKeys(assignmentNameFld);
@@ -689,12 +698,13 @@ public class CourseCreationModule extends DriverFactory {
         confirmationPopUpOkBtn.click();
         backBtnToCourseContentPage.click();
         Thread.sleep(2000);
+        return(htmlCreationBtn.isDisplayed());
 
     }
 
     @Parameters({"htmlContentTitle","htmlContentDescription"})
-    @Test()
-    public void HTMLLecture(String htmlContentTitleFld, String htmlContentDescriptionFld) throws InterruptedException {
+    @Test(priority = 7)
+    public boolean HTMLLecture(String htmlContentTitleFld, String htmlContentDescriptionFld) throws InterruptedException {
 
         htmlCreationBtn.click();
         htmlContentTitle.sendKeys(htmlContentTitleFld);
@@ -709,12 +719,14 @@ public class CourseCreationModule extends DriverFactory {
         confirmActiveBtn.click();
         confirmationPopUpOkBtn.click();
         backBtnToCourseContentPage.click();
+        Thread.sleep(500);
+        return(htmlCreationBtn.isDisplayed());
 
     }
 
     @Parameters({"lectureNameFld","lectureDescriptionFld"})
-    @Test()
-    public void ScormCreation(String lectureName, String lectureDescription) throws InterruptedException {
+    @Test(priority = 8)
+    public boolean ScormCreation(String lectureName, String lectureDescription) throws InterruptedException {
 
         scormContentCreationBtn.sendKeys("C:\\Users\\Enfin\\IJ_Work_Space\\MykademyMavenProject\\SupportingDocumentFiles\\SL360_LMS_SCORM_2004.zip");
         lectureNameFld.sendKeys(lectureName);
@@ -728,12 +740,13 @@ public class CourseCreationModule extends DriverFactory {
         confirmActiveBtn.click();
         confirmationPopUpOkBtn.click();
         backBtnToCourseContentPage.click();
+        return(youTubeContentCreationBtn.isDisplayed());
 
     }
 
     @Parameters({"youTubeContentTitle","youTubeContentDescription", "enterYouTubeUrl"})
-    @Test()
-    public void YoutubeLecture(String youTubeContentTitleFld, String youTubeContentDescriptionFld, String enterYouTubeUrlFld) throws InterruptedException {
+    @Test(priority = 9)
+    public boolean YoutubeLecture(String youTubeContentTitleFld, String youTubeContentDescriptionFld, String enterYouTubeUrlFld) throws InterruptedException {
 
         youTubeContentCreationBtn.click();
         youTubeContentTitle.sendKeys(youTubeContentTitleFld);
@@ -745,12 +758,13 @@ public class CourseCreationModule extends DriverFactory {
         confirmActiveBtn.click();
         confirmationPopUpOkBtn.click();
         backBtnToCourseContentPage.click();
+        return(surveyContentCreationBtn.isDisplayed());
 
     }
 
     @Parameters({"surveyContentTitle", "surveyContentDescription", "surveyQuestionAdd"})
-    @Test()
-    public void SurveyLecture(String surveyContentTitleFld, String surveyContentDescriptionFld, String surveyQuestionAddFld) throws InterruptedException {
+    @Test(priority = 10)
+    public boolean SurveyLecture(String surveyContentTitleFld, String surveyContentDescriptionFld, String surveyQuestionAddFld) throws InterruptedException {
 
         surveyContentCreationBtn.click();
         surveyContentTitle.sendKeys(surveyContentTitleFld);
@@ -807,12 +821,13 @@ public class CourseCreationModule extends DriverFactory {
         confirmActiveBtn.click();
         confirmationPopUpOkBtn.click();
         backBtnToCourseContentPage.click();
+        return(backButtonFromCourseContentPage.isDisplayed());
 
     }
 
     @Parameters({"courseShortDescription","courseDescription","courseActualPrice"})
-    @Test()
-    public void CourseSettings(String courseShortDescriptionFld, String courseDescriptionFld, String courseActualPriceFld) throws InterruptedException {
+    @Test(priority = 11)
+    public boolean CourseSettings(String courseShortDescriptionFld, String courseDescriptionFld, String courseActualPriceFld) throws InterruptedException {
 
         backButtonFromCourseContentPage.click();
         selectCourseSettingsPage.click();
@@ -845,30 +860,34 @@ public class CourseCreationModule extends DriverFactory {
         courseActualPrice.clear();
         courseActualPrice.sendKeys(courseActualPriceFld);
         appStorePrice.click();
-        saveAndNextBtnInCourseSettings.click();
+        saveBtnGreen.click();
+        Thread.sleep(3000);
         confirmationPopUpOkBtn.click();
+        Thread.sleep(1000);
+        return(selectCourseSettingsPage.isDisplayed());
 
     }
+    @Test(priority = 12)
+    public boolean ActivateNewCourse() throws InterruptedException {
 
-    @Test()
-    public void ActivateCourse() throws InterruptedException {
-
-        moveToCourseContentPage.click();
-        selectDropdownOfSection.click();
-        confirmationPopUpOkBtn.click();
-        confirmationPopUpOkBtn.click();
-        courseActivateOptionOfCourseContent.click();
-        activateLectureBtn.click();
-        confirmationActivateBtnInPopup.click();
-        confirmationPopUpOkBtn.click();
-        backButtonFromCourseContentPage.click();
-        selectCourseFromBreadcrumbs.click();
-
-    }
+    		moveToCourseContentPage.click();
+	        selectDropdownOfSection.click();
+	        confirmationPopUpOkBtn.click();
+	        confirmationPopUpOkBtn.click();
+	        courseActivateOptionOfCourseContent.click();
+	        activateLectureBtn.click();
+	        confirmationActivateBtnInPopup.click();
+	        confirmationPopUpOkBtn.click();
+	        backButtonFromCourseContentPage.click();
+	        selectCourseFromBreadcrumbs.click();
+	        Thread.sleep(1000);
+	        return(searchCourseName.isDisplayed());
+		
+	}
 
     @Parameters({"searchCourseName"})
-    @Test()
-    public void DeleteCourse(String searchCourseNameFld) throws InterruptedException {
+    @Test(priority = 13)
+    public boolean DeleteCourse(String searchCourseNameFld) throws InterruptedException {
 
         searchCourseName.sendKeys(searchCourseNameFld);
         Thread.sleep(1000);
@@ -877,7 +896,9 @@ public class CourseCreationModule extends DriverFactory {
         selectDeleteOptionFromDropdown.click();
         confirmationPopUpOkBtn.click();
         confirmationPopUpOkBtn.click();
+        return(searchCourseName.isDisplayed());
 
     }
+	
 
 }
