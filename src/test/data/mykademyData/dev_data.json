@@ -45,7 +45,7 @@
     {"testname": "roleManagementModule",
       "iteration": [
         {
-          "roleName": "New Test Role14"
+          "roleName": "New Test Role21"
         }
       ]
 
@@ -82,7 +82,7 @@
           "lectureDescription": "Automation Pdf File"
         },
         {
-          "fileName": "Sample100.xls",
+          "fileName": "EXCEL.xls",
           "lectureTitle": "New Document xls 1",
           "lectureDescription": "Automation xls File"
         },

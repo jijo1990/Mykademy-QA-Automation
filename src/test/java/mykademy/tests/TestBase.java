@@ -14,46 +14,46 @@ public class TestBase {
 	private DriverFactory df;
 	private TestReporter report;
 
-//	@BeforeSuite
-//	public void initSuite() {
-//		report =  new TestReporter();
-//	}
+	@BeforeSuite
+	public void initSuite() {
+		report =  new TestReporter();
+	}
 	
-	@BeforeSuite(alwaysRun=true)
+	@BeforeClass(alwaysRun=true)
 	public void initDriver() {
 		df = new DriverFactory();
 		driver = df.getDriver(System.getenv("browser"));
 	}
 
-//	@BeforeMethod
-//	public void startReport(Method method) {
-//		report.startReporting(method.getName(), driver);
-//	}
+	@BeforeMethod
+	public void startReport(Method method) {
+		report.startReporting(method.getName(), driver);
+	}
 
-//	@AfterMethod
-//	public void endReport() {
-//		report.endReporting();
-//	}
+	@AfterMethod
+	public void endReport() {
+		report.endReporting();
+	}
 
-//	@AfterSuite(alwaysRun=true)
-//	public void tearDown() {
-//		if(driver!=null) {
-//			driver.quit();
-//		}
-//	}
+	@AfterClass(alwaysRun=true)
+	public void tearDown() {
+		if(driver!=null) {
+			driver.quit();
+		}
+	}
 
-//	@AfterSuite
-//	public void endSuite() {
-//		report.flushReport();
-//	}
+	@AfterSuite
+	public void endSuite() {
+		report.flushReport();
+	}
 	
 	public WebDriver driver() {
 		return driver;
 	}
 
-//	public TestReporter log() {
-//		return report;
-//	}
+	public TestReporter log() {
+		return report;
+	}
 
 	@DataProvider
 	public Object[][] getData(Method method){
