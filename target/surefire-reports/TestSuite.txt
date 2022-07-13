@@ -1,24 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 23.967 s <<< FAILURE! - in TestSuite
-verifySignUpPage(mykademy.tests.MykademyTestSuite)  Time elapsed: 4.364 s  <<< FAILURE!
-java.lang.NullPointerException
-	at mykademy.tests.MykademyTestSuite.verifySignUpPage(MykademyTestSuite.java:44)
-
-verifyLoginCheck(mykademy.tests.MykademyTestSuite)  Time elapsed: 3.831 s  <<< FAILURE!
-java.lang.NullPointerException
-	at mykademy.tests.MykademyTestSuite.verifyLoginCheck(MykademyTestSuite.java:58)
-
-verifyLearnerAdd(mykademy.tests.MykademyTestSuite)  Time elapsed: 1.698 s  <<< FAILURE!
-java.lang.NullPointerException
-	at mykademy.tests.MykademyTestSuite.verifyLearnerAdd(MykademyTestSuite.java:82)
-
-verifyLearnerAdd(mykademy.tests.MykademyTestSuite)  Time elapsed: 1.288 s  <<< FAILURE!
-java.lang.NullPointerException
-	at mykademy.tests.MykademyTestSuite.verifyLearnerAdd(MykademyTestSuite.java:82)
-
-OtherLearnerModuleOperations(mykademy.tests.MykademyTestSuite)  Time elapsed: 3.747 s  <<< FAILURE!
-java.lang.NullPointerException
-	at mykademy.tests.MykademyTestSuite.OtherLearnerModuleOperations(MykademyTestSuite.java:96)
-
+Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.988 s - in TestSuite

@@ -1,3 +1,4 @@
+core\TestRunnerXMLGenerator.class
 mykademy\tests\MykademyTestSuite.class
 mykademy\tests\TestBase.class
 mykademy\pages\RoleManagement.class
